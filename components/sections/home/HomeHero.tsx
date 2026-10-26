@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#DCE2EB] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E1E3E5] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,39 +74,39 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#092C91;
-          border:1px solid #061B5C;
+          background:#F4511E;
+          border:1px solid #242526;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
           font-weight:600;
           letter-spacing:0.01em;
-          box-shadow:0 6px 20px rgba(9,44,145,0.32);
+          box-shadow:0 6px 20px rgba(244,81,30,0.32);
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#2861C5;
-          box-shadow:0 8px 26px rgba(9,44,145,0.45);
+          background:#FF6A35;
+          box-shadow:0 8px 26px rgba(244,81,30,0.45);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #07152F;
+          outline:2px solid #171819;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #DCE2EB;
+          border:1px solid #E1E3E5;
           border-radius:8px;
           font-size:12px;
-          color:#111820;
+          color:#171819;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#111820;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#171819;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#5B6068;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#5B6068;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#5B6068;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#5B6068;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#62666B;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#62666B;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#62666B;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#62666B;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#07152F;
+          background:#171819;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#DCE2EB;
+          color:#E1E3E5;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#092C91;
+          color:#F4511E;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,27 +188,27 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="AZZURE"
+          word="LANDFORGE"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#111820",
-            "--gp-field": "#07152F",
+            "--gp-ink": "#171819",
+            "--gp-field": "#171819",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
           interactive={true}
           annotations={false}
-          enterLabel="Conheça a Azzure"
+          enterLabel="Conheça a AM Property Solutions"
           underlay={
             <div
               className="absolute inset-0 overflow-hidden pointer-events-none"
               aria-hidden="true"
             >
               <Image
-                src="/images/plumbing-pipes.jpg"
+                src="/images/roofing-hero.png"
                 alt=""
                 fill
                 priority
@@ -233,7 +233,7 @@ export default function HomeHero() {
             >
               {/* Reparos hidráulicos photo at low opacity inside the glyph zoom destination */}
               <Image
-                src="/images/plumbing-technician.jpg"
+                src="/images/roof-repair.png"
                 alt=""
                 fill
                 className="object-cover object-center"
@@ -244,7 +244,7 @@ export default function HomeHero() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at 18% 12%, rgba(9,44,145,0.28), transparent 38%), radial-gradient(circle at 82% 22%, rgba(6,27,92,0.35), transparent 32%), linear-gradient(135deg, rgba(7,21,47,0.94) 0%, rgba(7,21,47,0.9) 50%, rgba(7,21,47,0.96) 100%)",
+                    "radial-gradient(circle at 18% 12%, rgba(244,81,30,0.28), transparent 38%), radial-gradient(circle at 82% 22%, rgba(36,37,38,0.35), transparent 32%), linear-gradient(135deg, rgba(23,24,25,0.94) 0%, rgba(23,24,25,0.9) 50%, rgba(23,24,25,0.96) 100%)",
                 }}
               />
             </div>
@@ -252,74 +252,74 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>Azzure Construção e Reforma</span>
-                <span data-ch-hero-category>Palmeiras de Goiás · Goiás<br />Palmeiras de Goiás e região</span>
+                <span data-ch-hero-brand>AM Property Solutions Mackay</span>
+                <span data-ch-hero-category>Mackay · Queensland<br />Mackay and surrounding areas</span>
               </div>
-              <p data-ch-hero-intro>Serviços de pintura, reformas e reparos residenciais.</p>
+              <p data-ch-hero-intro>Property maintenance, repairs and outdoor services.</p>
               <p data-ch-hero-support>
-                Pintura, reformas residenciais e reparos em Palmeiras de Goiás, com cuidado e atenção aos detalhes.
+                Reliable property maintenance, repairs and outdoor work in Mackay.
               </p>
-              <span data-sublime-scroll>Role para conhecer ↓</span>
+              <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
           }
         >
           <div data-slipstream-copy>
             <h2>
-              Pintura, reformas e reparos residenciais com atenção a cada detalhe.
+              Property maintenance and repairs, completed with care.
             </h2>
 
             <div data-slipstream-features>
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>01</span>
-                  Pintura e reparos
+                  Repairs and maintenance
                 </h3>
                 <p>
-                  Pintura residencial com atenção a cada detalhe e ao acabamento.
+                  Friendly, efficient help with jobs around the house.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Reformas residenciais
+                  Outdoor property solutions
                 </h3>
                 <p>
-                  Reformas e reparos para renovar e cuidar da sua casa.
+                  Fencing, landscaping and earthworks for your property.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>03</span>
-                  Reparos e acabamentos
+                  Rubbish removal and repairs
                 </h3>
                 <p>
-                  Converse com a equipe sobre o escopo e os detalhes do seu projeto.
+                  Tell us what needs doing and we will discuss the details.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="https://wa.me/5564999321901"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#092C91] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(9,44,145,0.35)] transition-all hover:bg-[#2861C5] hover:shadow-[0_8px_26px_rgba(9,44,145,0.45)]"
+                href="https://wa.me/61410048618"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#F4511E] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(244,81,30,0.35)] transition-all hover:bg-[#FF6A35] hover:shadow-[0_8px_26px_rgba(244,81,30,0.45)]"
               >
-                Chamar no WhatsApp
+                Call or message
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="https://wa.me/5564999321901"
+                href="https://wa.me/61410048618"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#2861C5]" />
-                WhatsApp Azzure
+                <Phone size={15} className="text-[#FF6A35]" />
+                Contact AM Property Solutions
               </a>
               <a
                 href="#home-stats"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 font-body text-sm font-medium text-white/90 hover:bg-white/15 hover:text-white transition-all"
               >
-                <span>Veja avaliações e serviços</span>
+                <span>Explore services and reviews</span>
                 <ArrowDown size={15} />
               </a>
             </div>
@@ -332,12 +332,12 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#111820",
+            color: "#171819",
             fontSize: 14,
             fontWeight: 500,
           }}
         >
-          Carregando…
+          Loading…
         </div>
       )}
     </div>

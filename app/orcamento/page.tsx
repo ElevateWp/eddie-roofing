@@ -9,32 +9,32 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Solicite um orçamento',
+  title: 'Request a quote',
   description:
-    'Solicite um orçamento para pinturas, reformas ou reparos à Azzure Construção e Reforma. Ligue para +55 64 99932-1901.',
+    'Contact AM Property Solutions Mackay to discuss your job and request a quote. Call +61 410 048 618.',
   pathname: '/orcamento/',
 });
 
 const BOOKING_STEPS = [
   {
     step: 1,
-    title: 'Envie sua solicitação',
-    description: 'Conte sobre seu projeto e informe como prefere receber nosso contato.',
+    title: 'Send your enquiry',
+    description: 'Tell us about your job and how you would prefer us to contact you.',
   },
   {
     step: 2,
-    title: 'Análise da solicitação',
-    description: 'Nossa equipe analisará sua solicitação e conversará sobre a disponibilidade e as próximas etapas.',
+    title: 'Discuss your enquiry',
+    description: 'We will discuss availability and the next steps for your job.',
   },
   {
     step: 3,
-    title: 'Entraremos em contato',
-    description: 'Entraremos em contato para conversar sobre sua solicitação e os próximos passos.',
+    title: 'We will get in touch',
+    description: 'We will get in touch to discuss your enquiry and next steps.',
   },
   {
     step: 4,
-    title: 'Realização do serviço',
-    description: 'A equipe da Azzure realiza o serviço combinado em seu imóvel.',
+    title: 'Complete the agreed work',
+    description: 'A equipe da AM Property Solutions realiza o service combinado em seu imóvel.',
   },
 ];
 
@@ -44,17 +44,17 @@ export default function BookAppointmentPage() {
       {/* SECTION 1: Appointment Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Solicitar orçamento', path: '/orcamento/' }]} />
+          <Breadcrumbs items={[{ name: 'Request a quote', path: '/orcamento/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8 items-start">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
-                  Atendimento personalizado
+                  Service personalizado
                 </span>
-                <WordRevealH1 text="Solicite um orçamento." />
+                <WordRevealH1 text="Request a quote." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Conte sobre o serviço que você precisa. A equipe conversa com você sobre disponibilidade e próximas etapas." />
+                  <ScrubbedParagraph text="Tell us what work you need. We will discuss availability and next steps." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -62,9 +62,9 @@ export default function BookAppointmentPage() {
             <div className="lg:col-span-4 lg:pl-6">
               <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
-                  <span className="font-medium text-forest block">Ligue para nossa equipe:</span>
+                  <span className="font-medium text-forest block">Call our team:</span>
                   <p className="text-forest-ink/70">
-                    Prefere falar diretamente com a equipe? Ligue durante o horário de atendimento.
+                    Would you prefer to speak directly? Call during business hours.
                   </p>
                   <a
                     href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
@@ -131,24 +131,24 @@ export default function BookAppointmentPage() {
         </div>
       </section>
 
-      {/* SECTION 4, 5, 6: Contato Options, Horário de atendimento, Região de atendimento */}
+      {/* SECTION 4, 5, 6: Contact Options, Opening hours, Service area */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Contato Options */}
+            {/* Contact Options */}
             <AnimateOnScroll animation="fade-up" delay={0.1}>
               <div className="p-8 bg-paper border border-mist h-full shadow-sm">
-                <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Contato</span>
-                <h3 className="font-display text-21 text-forest-ink mb-4">Fale com nossa equipe</h3>
+                <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Contact</span>
+                <h3 className="font-display text-21 text-forest-ink mb-4">Contact our team</h3>
                 <div className="space-y-3 font-body text-13 text-forest-ink/80">
                   <div>
-                    <span className="text-forest-ink/60 block">Telefone:</span>
+                    <span className="text-forest-ink/60 block">Phone:</span>
                     <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="font-medium text-forest hover:underline">
                       {CLINIC_INFO.contact.phone}
                     </a>
                   </div>
                   <div>
-                    <span className="text-forest-ink/60 block">Telefone:</span>
+                    <span className="text-forest-ink/60 block">Phone:</span>
                     <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="font-medium text-forest hover:underline">
                       {CLINIC_INFO.contact.phone}
                     </a>
@@ -157,29 +157,29 @@ export default function BookAppointmentPage() {
               </div>
             </AnimateOnScroll>
 
-            {/* Horário de atendimento */}
+            {/* Opening hours */}
             <AnimateOnScroll animation="fade-up" delay={0.2}>
               <div className="p-8 bg-paper border border-mist h-full shadow-sm">
                 <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Horários</span>
-                <h3 className="font-display text-21 text-forest-ink mb-4">Horário de atendimento</h3>
+                <h3 className="font-display text-21 text-forest-ink mb-4">Opening hours</h3>
                 <div className="space-y-1.5 font-body text-13 text-forest-ink/80">
                   {CLINIC_INFO.schedule.length > 0 ? CLINIC_INFO.schedule.map((item) => (
                     <div key={item.day} className="flex justify-between">
                       <span>{item.day}</span>
                       <span className="tabular-nums">{item.hours}</span>
                     </div>
-                  )) : <p>Ligue para confirmar o horário de atendimento.</p>}
+                  )) : <p>Call to confirm availability.</p>}
                 </div>
               </div>
             </AnimateOnScroll>
 
-            {/* Região de atendimento */}
+            {/* Service area */}
             <AnimateOnScroll animation="fade-up" delay={0.3}>
               <div className="p-8 bg-paper border border-mist h-full shadow-sm">
                 <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Localização</span>
-                <h3 className="font-display text-21 text-forest-ink mb-4">Região de atendimento</h3>
+                <h3 className="font-display text-21 text-forest-ink mb-4">Service area</h3>
                 <p className="font-body text-13 text-forest-ink/80 leading-relaxed mb-3">
-                  Atendemos em Palmeiras de Goiás e região. Contato us to confirm availability for your property.
+                  We serve Mackay and surrounding areas. Contact us to confirm availability.
                 </p>
               </div>
             </AnimateOnScroll>

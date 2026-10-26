@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function LegacyServiceRedirect() {
-  redirect('/leak-detection/');
+  redirect('/property-maintenance/');
 }

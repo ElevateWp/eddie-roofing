@@ -31,7 +31,7 @@ export function createMetadata({
       description,
       url,
       siteName: CLINIC_INFO.name,
-      locale: 'pt_BR',
+      locale: 'en_AU',
       type: 'website',
       images: [
         {
@@ -84,7 +84,7 @@ export function generateLocalBusinessSchema() {
       latitude: CLINIC_INFO.primaryLocation.coordinates.lat,
       longitude: CLINIC_INFO.primaryLocation.coordinates.lng,
     } } : {}),
-    openingHoráriosSpecification: CLINIC_INFO.schedule
+    openingHoursSpecification: CLINIC_INFO.schedule
       .flatMap((item) => {
         const range = item.hours.match(/(\d{1,2})(?::(\d{2}))?\s*(AM|PM)[–-](\d{1,2})(?::(\d{2}))?\s*(AM|PM)/i);
         if (!range || item.hours.toLowerCase() === 'closed') return [];
@@ -95,7 +95,7 @@ export function generateLocalBusinessSchema() {
         };
         const dayOfWeek = [item.day];
         return [{
-        '@type': 'OpeningHoráriosSpecification',
+        '@type': 'OpeningHoursSpecification',
         dayOfWeek,
         opens: to24Hour(range[1], range[2] || '00', range[3]),
         closes: to24Hour(range[4], range[5] || '00', range[6]),
@@ -110,7 +110,7 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Reformas, pintura e reparos residenciais',
+    serviceType: 'Property maintenance, repairs and outdoor services',
     url: `${BASE_URL}${url}`,
     provider: {
       '@type': 'LocalBusiness',

@@ -23,11 +23,11 @@ export default function CountingNumber({
   className = '',
 }: CountingNumberProps) {
   const numRef = useRef<HTMLSpanElement>(null);
-  const [displayValue, setDisplayValue] = useState<string>(value.toLocaleString("pt-BR", { minimumFractionDigits: decimals, maximumFractionDigits: decimals }));
+  const [displayValue, setDisplayValue] = useState<string>(value.toLocaleString("en-AU", { minimumFractionDigits: decimals, maximumFractionDigits: decimals }));
 
   useEffect(() => {
     if (isReducedMotion() || !numRef.current) {
-      setDisplayValue(value.toLocaleString("pt-BR", { minimumFractionDigits: decimals, maximumFractionDigits: decimals }));
+      setDisplayValue(value.toLocaleString("en-AU", { minimumFractionDigits: decimals, maximumFractionDigits: decimals }));
       return;
     }
 
@@ -46,7 +46,7 @@ export default function CountingNumber({
           if (decimals > 0) {
             setDisplayValue(obj.count.toFixed(decimals).replace(".", ","));
           } else {
-            setDisplayValue(Math.round(obj.count).toLocaleString("pt-BR"));
+            setDisplayValue(Math.round(obj.count).toLocaleString("en-AU"));
           }
         },
       });

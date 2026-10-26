@@ -11,22 +11,21 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Azzure Construção e Reforma | Reformas e pintura em Palmeiras de Goiás',
+    default: 'AM Property Solutions Mackay | Property services in Mackay',
     template: '%s',
   },
   description:
-    'Pintura residencial, reformas e reparos em Palmeiras de Goiás. Ligue ou chame a Azzure no WhatsApp: +55 64 99932-1901.',
+    'Property maintenance, rubbish removal and outdoor services in Mackay. Call AM Property Solutions Mackay on +61 410 048 618.',
   keywords: [
-    'Azzure Construção e Reforma',
-    'serviços residenciais Palmeiras de Goiás e região',
-    'reformas residenciais',
+    'AM Property Solutions Mackay',
+    'property services Mackay and surrounding areas',
+    'property maintenance',
   ],
-  authors: [{ name: 'Azzure Construção e Reforma' }],
+  authors: [{ name: 'AM Property Solutions Mackay' }],
   icons: {
     icon: [
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
     ],
     shortcut: [{ url: '/favicon-32.png', type: 'image/png' }],
     apple: [{ url: '/favicon-180.png', sizes: '180x180', type: 'image/png' }],
@@ -39,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="en-AU" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -48,12 +47,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#7197DC] selection:text-[#111820]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#FF8A50] selection:text-[#171819]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />
         <a href="#main-content" className="skip-link">
-          Pular para o conteúdo principal
+          Skip to main content
         </a>
         <LenisProvider>
           <Navbar />

@@ -9,31 +9,31 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contato e região de atendimento',
+  title: 'Contact and service area',
   description:
-    'Entre em contato com a Azzure Construção e Reforma pelo telefone +55 64 99932-1901 para conversar sobre pinturas, reformas e reparos.',
+    'Call AM Property Solutions Mackay on +61 410 048 618 to discuss property repairs, rubbish removal or outdoor work.',
   pathname: '/contato/',
 });
 
-export default function ContatoPage() {
+export default function ContactPage() {
   return (
     <div className="flex flex-col w-full bg-paper">
-      {/* SECTION 1: Contato Introduction */}
+      {/* SECTION 1: Contact Introduction */}
       <section className="relative py-16 md:py-24 border-b border-mist overflow-hidden">
         <TextureBackground variant="contact" className="opacity-30" />
 
         <div className="relative z-10 max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Contato', path: '/contato/' }]} />
+          <Breadcrumbs items={[{ name: 'Contact', path: '/contato/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
-                  Contato e orçamentos
+                  Contact e quotes
                 </span>
-                <WordRevealH1 text="Fale com a equipe Azzure." />
+                <WordRevealH1 text="Contact AM Property Solutions Mackay." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Ligue para conversar reparos hidráulicos work, reparos hidráulicos repairs or reparos hidráulicos repairs.
+                  Call us to discuss home repairs, rubbish removal, drywall repair or painting.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -41,7 +41,7 @@ export default function ContatoPage() {
         </div>
       </section>
 
-      {/* SECTION 2-7: Contato Methods Directory, Horários, Address & Map */}
+      {/* SECTION 2-7: Contact Methods Directory, Horários, Address & Map */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -50,23 +50,23 @@ export default function ContatoPage() {
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <div>
                   <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                    Entre em contato
+                    Get in touch
                   </span>
                   <h2 className="font-display text-26 md:text-33 text-forest-ink mb-6">
-                    Fale conosco
+                    Contact us
                   </h2>
                   <a
                     href="/orcamento/"
                     className="mb-5 inline-flex min-h-11 items-center bg-brand px-5 font-body text-15 font-semibold text-white transition-colors hover:bg-brand-hover"
                   >
-                    Solicitar orçamento
+                    Request a quote
                   </a>
 
                   <div className="divide-y divide-mist border-t border-b border-mist">
                     {/* Ligue */}
                     <div className="py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-mist/30 px-4 -mx-4 rounded-sm">
                       <div>
-                        <span className="font-body text-13 text-forest font-semibold block">Ligue para nossa equipe</span>
+                        <span className="font-body text-13 text-forest font-semibold block">Call our team</span>
                         <a
                           href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                           target="_blank"
@@ -76,13 +76,13 @@ export default function ContatoPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest font-medium">Solicitações de serviços residenciais</span>
+                      <span className="font-body text-13 text-forest font-medium">Property service enquiries</span>
                     </div>
 
-                    {/* Telefone */}
+                    {/* Phone */}
                     <div className="py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                       <div>
-                        <span className="font-body text-13 text-forest-ink/60 block">Telefone</span>
+                        <span className="font-body text-13 text-forest-ink/60 block">Phone</span>
                         <a
                           href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                           className="font-display text-21 text-forest hover:underline"
@@ -90,7 +90,7 @@ export default function ContatoPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest-ink/60">Ligue para conversar sobre disponibilidade</span>
+                      <span className="font-body text-13 text-forest-ink/60">Call to check availability</span>
                     </div>
 
                   </div>
@@ -101,7 +101,7 @@ export default function ContatoPage() {
               <AnimateOnScroll animation="fade-up" duration={0.8} delay={0.2}>
                 <div>
                   <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                    Região de atendimento
+                    Service area
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-3">
                     {CLINIC_INFO.name}
@@ -110,18 +110,18 @@ export default function ContatoPage() {
                     {CLINIC_INFO.primaryLocation.directions}
                   </address>
                   <div className="p-4 bg-mist/40 border-l-2 border-forest font-body text-13 text-forest-ink/80 leading-relaxed">
-                    Ligue para confirmar a região de atendimento e a disponibilidade.
+                    Call to confirm service area and availability.
                   </div>
                 </div>
               </AnimateOnScroll>
             </div>
 
-            {/* Right: Horário de atendimento Table & Stylized Palette Map */}
+            {/* Right: Opening hours Table & Stylized Palette Map */}
             <div className="lg:col-span-6 flex flex-col space-y-8">
               <AnimateOnScroll animation="fade-left" duration={0.8}>
                 <div>
                   <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                    Horário de atendimento
+                    Opening hours
                   </span>
                   <div className="border border-mist divide-y divide-mist bg-paper font-body text-13 shadow-sm">
                     {CLINIC_INFO.schedule.length > 0 ? CLINIC_INFO.schedule.map((item) => (
@@ -129,7 +129,7 @@ export default function ContatoPage() {
                         <span className="font-medium text-forest-ink">{item.day}</span>
                         <span className="tabular-nums text-forest-ink/80">{item.hours}</span>
                       </div>
-                    )) : <p className="p-3.5 text-forest-ink/80">Ligue para confirmar a disponibilidade.</p>}
+                    )) : <p className="p-3.5 text-forest-ink/80">Call to confirm availability.</p>}
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -139,13 +139,13 @@ export default function ContatoPage() {
                 <div className="p-8 bg-forest text-paper flex flex-col justify-between aspect-[16/10] shadow-sm">
                   <div>
                     <span className="font-body text-13 text-lime block mb-2 font-medium uppercase tracking-wider">
-                      Região de atendimento
+                      Service area
                     </span>
                     <h3 className="font-display text-26 text-paper mb-2">
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    Ligue para confirmar a disponibilidade de atendimento para seu imóvel.
+                    Call to check availability for your property.
                     </p>
                   </div>
 
@@ -155,7 +155,7 @@ export default function ContatoPage() {
                       variant="lime"
                       size="sm"
                     >
-                      Ligue para nossa equipe
+                      Call our team
                     </Button>
                     <a
                       href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
@@ -163,7 +163,7 @@ export default function ContatoPage() {
                       rel="noopener noreferrer"
                       className="font-body text-13 text-lime hover:underline font-semibold"
                     >
-                      Ligue: {CLINIC_INFO.contact.phone}
+                      Call: {CLINIC_INFO.contact.phone}
                     </a>
                   </div>
                 </div>
@@ -173,13 +173,13 @@ export default function ContatoPage() {
         </div>
       </section>
 
-      {/* SECTION 8: Final Contato / Appointment CTA */}
+      {/* SECTION 8: Final Contact / Appointment CTA */}
       <section className="py-20 md:py-28 bg-forest text-paper">
         <div className="max-w-site mx-auto px-6 md:px-12 flex flex-col md:flex-row md:items-center justify-between gap-8">
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Solicitar orçamento
+                Request a quote
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
                 Ready to request a quote?
@@ -188,7 +188,7 @@ export default function ContatoPage() {
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <Button href="/orcamento/" variant="lime" size="lg">
-              Solicitar orçamento Online
+              Request a quote Online
             </Button>
           </AnimateOnScroll>
         </div>

@@ -27,20 +27,20 @@ export default function HomeDentists() {
           <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-paper via-paper/10 via-30% to-paper/85" />
           <div className="relative z-20 flex h-full flex-col items-center px-5 py-10 text-center md:py-14">
             <span className="font-body text-13 font-medium uppercase tracking-[0.18em] text-forest-ink/60">
-              Nossa equipe
+              Our team
             </span>
             <h2 className="mt-3 max-w-3xl font-display text-26 text-balance text-forest-ink md:text-41">
-              Conheça a equipe Azzure
+              Meet Ashton at AM Property Solutions
             </h2>
             <div className="mt-auto flex flex-col items-center pb-1">
               <p className="max-w-lg text-balance font-body text-15 leading-relaxed text-forest-ink/70">
-                A Azzure Construção e Reforma atende serviços de pintura, reformas e reparos com atenção aos detalhes.
+                A AM Property Solutions Mackay atende services de property repairs and maintenance com atenção aos detalhes.
               </p>
               <Link
                 href="/equipe/"
-                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#092C91] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#092C91]/20 transition-transform hover:-translate-y-0.5"
+                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#F4511E] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#F4511E]/20 transition-transform hover:-translate-y-0.5"
               >
-                Conheça a equipe <span className="ml-2" aria-hidden="true">→</span>
+                Meet the team <span className="ml-2" aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

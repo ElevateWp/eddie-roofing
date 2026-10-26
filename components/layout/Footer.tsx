@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
                   src="/images/logo.png"
-                  alt="Azzure Construção e Reforma logo"
+                  alt="AM Property Solutions Mackay logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Azzure Construção e Reforma
+                  AM Property Solutions Mackay
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Pintura · Reformas · Reparos
+                  Handyman · Rubbish removal · Property care
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Pintura, reformas e reparos residenciais em Palmeiras de Goiás e região.
+              Property maintenance, repairs and outdoor services across Mackay.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <span>+55 64 99932-1901</span>
+              <a href="tel:+61410048618" className="hover:text-paper">+61 410 048 618</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">landforge.com.au</a>}
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -41,10 +41,10 @@ export default function Footer() {
           <div className="lg:col-span-6 lg:pl-12 flex flex-col justify-between">
             <div className="p-6 bg-paper/5 border border-mist/20 rounded-none shadow-sm">
               <span className="font-body text-13 text-lime block mb-2 font-semibold uppercase tracking-wider">
-                Serviços residenciais
+                Property services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Precisa de pintura, reforma ou reparo? Ligue ou chame a Azzure no WhatsApp.
+                Need a hand with a property job? Call AM Property Solutions Mackay.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -53,13 +53,13 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="font-body text-15 font-semibold text-lime hover:underline"
                 >
-                  Ligue: {CLINIC_INFO.contact.phone}
+                  Call: {CLINIC_INFO.contact.phone}
                 </a>
                 <Link
                   href="/orcamento/"
                   className="font-body text-13 text-paper/80 underline underline-offset-4 hover:text-paper"
                 >
-                  Solicitar orçamento
+                  Request a quote
                 </Link>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Column 1: technical Treatments */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Serviços
+              Services
             </span>
             <ul className="space-y-2.5 font-body text-15">
               {SERVICES.map((s) => (
@@ -90,12 +90,12 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Nossa equipe
+              Our team
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/equipe/" className="text-paper/80 hover:text-lime transition-colors">
-                  Conheça a equipe Azzure
+                  Meet Ashton at AM Property Solutions
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -114,50 +114,50 @@ export default function Footer() {
           {/* Column 3: The company */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              A empresa
+              Company
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/sobre/" className="text-paper/80 hover:text-lime transition-colors">
-                  Sobre nós
+                  About us
                 </Link>
               </li>
               <li>
                 <Link href="/servicos/" className="text-paper/80 hover:text-lime transition-colors">
-                  Serviços residenciais
+                  Property services
                 </Link>
               </li>
               <li>
                 <Link href="/dicas/" className="text-paper/80 hover:text-lime transition-colors">
-                  Dicas para sua casa
+                  Property tips
                 </Link>
               </li>
               <li>
                 <Link href="/orcamento/" className="text-paper/80 hover:text-lime transition-colors">
-                  Solicitar orçamento
+                  Request a quote
                 </Link>
               </li>
               <li>
                 <Link href="/contato/" className="text-paper/80 hover:text-lime transition-colors">
-                  Contato
+                  Contact
                 </Link>
               </li>
               <li>
                 <Link href="/orcamento/" className="text-paper/80 hover:text-lime transition-colors">
-                  Solicitar orçamento
+                  Request a quote
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Contato Info */}
+          {/* Column 4: Contact Info */}
           <div className="col-span-1 md:col-span-1 lg:col-span-2">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Contato
+              Contact
             </span>
             <div className="space-y-3 font-body text-15 text-paper/80">
               <div>
-                <span className="text-paper/50 block text-13">Telefone:</span>
+                <span className="text-paper/50 block text-13">Phone:</span>
                 <a
                   href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                   target="_blank"
@@ -168,7 +168,7 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <span className="text-paper/50 block text-13">Região de atendimento:</span>
+                <span className="text-paper/50 block text-13">Service area:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
                   {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.city} {CLINIC_INFO.primaryLocation.postalCode}
                 </address>
@@ -180,10 +180,10 @@ export default function Footer() {
         {/* Bottom Section: Legal & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body text-13 text-paper/60">
           <div>
-            © {new Date().getFullYear()} {CLINIC_INFO.legalName}. Todos os direitos reservados.
+            © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Azzure Construção e Reforma</a>
+            <a href="/" className="hover:text-paper">AM Property Solutions Mackay</a>
           </div>
         </div>
       </div>

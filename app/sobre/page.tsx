@@ -14,36 +14,36 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Sobre a Azzure Construção e Reforma',
+  title: 'Sobre a AM Property Solutions Mackay',
   description:
-    'Conheça a Azzure Construção e Reforma e seus serviços de pintura, reformas e reparos em Palmeiras de Goiás.',
+    'Meet AM Property Solutions Mackay and learn about our property services.',
   pathname: '/sobre/',
 });
 
 const TIMELINE = [
   {
-    year: 'Palmeiras de Goiás e região',
-    title: 'Serviços para sua casa',
-    description: 'A Azzure Construção e Reforma realiza pintura, reformas e reparos residenciais. Entre em contato para conversar sobre o que você precisa.',
+    year: 'Mackay and surrounding areas',
+    title: 'Services for your property',
+    description: 'AM Property Solutions Mackay provides practical property repairs and maintenance. Contact us to discuss your job.',
   },
 ];
 
 const APPROACH_STEPS = [
   {
     title: 'Escuta e planejamento',
-    description: 'Conversamos sobre o imóvel, o serviço desejado e os detalhes do projeto.',
+    description: 'Conversamos sobre o imóvel, o service desejado e os detalhes do project.',
   },
   {
-    title: 'Orçamento alinhado',
-    description: 'Alinhamos o escopo do serviço, os materiais e os prazos antes do início.',
+    title: 'Quote alinhado',
+    description: 'Alinhamos o escopo do service, os materiais e os prazos antes do início.',
   },
   {
     title: 'Cuidado na execução',
-    description: 'Executamos o serviço combinado com cuidado e atenção aos detalhes.',
+    description: 'Executamos o service combinado com cuidado e atenção aos detalhes.',
   },
   {
-    title: 'Comunicação durante o serviço',
-    description: 'Conversamos com você do orçamento à conclusão do serviço.',
+    title: 'Comunicação durante o service',
+    description: 'We keep you informed from the quote through to completion.',
   },
 ];
 
@@ -53,17 +53,17 @@ export default function AboutPage() {
       {/* SECTION 1: Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Sobre nós', path: '/sobre/' }]} />
+          <Breadcrumbs items={[{ name: 'About us', path: '/sobre/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  Sobre a Azzure Construção e Reforma
+                  Sobre a AM Property Solutions Mackay
                 </span>
-                <WordRevealH1 text="Pintura, reformas e reparos residenciais com atenção aos detalhes." />
+                <WordRevealH1 text="Property maintenance, repairs and outdoor solutions across Mackay." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="A Azzure Construção e Reforma realiza serviços de pintura, reformas residenciais e reparos. As avaliações destacam profissionalismo, eficiência e cuidado com cada detalhe." />
+                  <ScrubbedParagraph text="A AM Property Solutions Mackay realiza services de painting, property maintenance e repairs. As reviews destacam profissionalismo, eficiência e cuidado com cada detalhe." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Ligue</span>
-                    <span className="font-medium text-forest">+55 64 99932-1901</span>
+                    <span className="font-medium text-forest">+61 410 048 618</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -121,7 +121,7 @@ export default function AboutPage() {
         </div>
       </PanelWipe>
 
-      {/* SECTION 3: Nosso jeito de trabalhar */}
+      {/* SECTION 3: How we work */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -130,7 +130,7 @@ export default function AboutPage() {
                 How We Work
               </span>
               <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                Nosso jeito de trabalhar
+                How we work
               </h2>
             </div>
           </AnimateOnScroll>
@@ -161,17 +161,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Equipe Azzure Construção e Reforma */}
+      {/* SECTION 4: Equipe AM Property Solutions Mackay */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
               <div>
                 <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                  Nossa equipe
+                  Our team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Conheça a equipe Azzure
+                  Meet Ashton at AM Property Solutions
                 </h2>
               </div>
               <Link
@@ -191,25 +191,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 5: Serviços residenciais Work */}
+      {/* SECTION 5: Property services Work */}
       <section className="py-20 md:py-32 border-b border-mist overflow-hidden">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                  Nossos serviços
+                  Our services
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-                  Serviços para cuidar e renovar seu imóvel
+                  Services para cuidar e renovar seu imóvel
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Nossa equipe conversa com você sobre pintura, reformas, reparos e as melhores etapas para seu imóvel.
+                  Our team discusses handyman work, rubbish removal, drywall repairs, painting and the right steps for your property.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                    <span>O escopo e os detalhes do projeto são alinhados antes do início.</span>
+                    <span>O escopo e os detalhes do project são alinhados antes do início.</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
@@ -225,14 +225,14 @@ export default function AboutPage() {
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
                       src="/images/plumbing-technician.jpg"
-                      alt="Serviço residencial em andamento"
+                      alt="Service residencial em andamento"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
                   <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                    Serviço residencial
+                    Service residencial
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -247,10 +247,10 @@ export default function AboutPage() {
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <div className="mb-12">
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                Inspiração para seu projeto
+                Property project inspiration
               </span>
               <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                Inspiração e serviços para seu projeto
+                Property service inspiration
               </h2>
             </div>
           </AnimateOnScroll>
@@ -260,13 +260,13 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/plumbing-repair.jpg"
-                  alt="Projeto residencial"
+                  alt="Project residencial"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Referência de serviço residencial
+                  Referência de service residencial
                 </div>
               </div>
             </AnimateOnScroll>
@@ -274,13 +274,13 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/plumbing-pipes.jpg"
-                  alt="Projeto de reparo residencial"
+                  alt="Project de reparo residencial"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Serviços residenciais
+                  Property services
                 </div>
               </div>
             </AnimateOnScroll>
@@ -288,7 +288,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/plumbing-hot-water.jpg"
-                  alt="Projeto residencial"
+                  alt="Project residencial"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
@@ -308,23 +308,23 @@ export default function AboutPage() {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Solicitar orçamento
+                Request a quote
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Conte sobre o serviço que você deseja realizar
+                Tell us what you need done
               </h2>
               <p className="font-body text-15 text-paper/80 mt-2 max-w-xl">
-                Ligue para conversar sobre o serviço que você precisa e consultar a disponibilidade.
+                Call to discuss the work you need and check availability.
               </p>
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <div className="flex flex-wrap items-center gap-4">
               <Button href="/orcamento/" variant="lime" size="lg">
-                Solicitar orçamento
+                Request a quote
               </Button>
               <Button href="/contato/" variant="ghost-light" size="lg">
-                Fale conosco
+                Contact us
               </Button>
             </div>
           </AnimateOnScroll>

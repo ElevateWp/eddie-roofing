@@ -9,22 +9,12 @@ import JsonLd from '@/components/ui/JsonLd';
 import { CLINIC_INFO, SERVICES } from '@/lib/clinic-data';
 import { createMetadata, generateServiceSchema } from '@/lib/seo';
 
-const RELATED_SERVICE_SLUGS: Record<string, string[]> = {
-  'pintura-residencial': ['pintura-personalizada', 'pintura-de-interiores', 'reformas-residenciais'],
-  'pintura-personalizada': ['pintura-residencial', 'pintura-de-interiores', 'envernizamento-de-madeira'],
-  'pintura-de-interiores': ['pintura-residencial', 'pintura-personalizada', 'reformas-residenciais'],
-  'reformas-residenciais': ['reparos-gerais', 'pintura-residencial', 'reparos-hidraulicos'],
-  'reparos-gerais': ['reparos-hidraulicos', 'reparos-de-trincas-e-infiltracoes', 'reformas-residenciais'],
-  'reparos-hidraulicos': ['reparos-gerais', 'reformas-residenciais', 'reparos-de-trincas-e-infiltracoes'],
-  'reparos-de-trincas-e-infiltracoes': ['reparos-gerais', 'reparos-hidraulicos', 'reformas-residenciais'],
-  'envernizamento-de-madeira': ['pintura-personalizada', 'pintura-residencial', 'reformas-residenciais'],
-};
-
 export default function ServiceLandingPage({ slug }: { slug: string }) {
   const service = SERVICES.find((item) => item.slug === slug);
   if (!service) return null;
 
   const photo = service.beforeAfterCase.beforeImage;
+  const relatedServices = SERVICES.filter((item) => item.slug !== slug).slice(0, 3);
   const servicePath = `/${service.slug}/`;
   const schema = generateServiceSchema(service.name, service.shortDescription, servicePath);
 
@@ -38,7 +28,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">
-                  Azzure Construção e Reforma
+                  AM Property Solutions Mackay
                 </span>
                 <WordRevealH1 text={service.name} />
                 <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">
@@ -48,9 +38,9 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
                   {service.shortDescription}
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <Button href="/orcamento/" variant="forest" size="lg">Solicitar orçamento</Button>
+                  <Button href="/orcamento/" variant="forest" size="lg">Request a quote</Button>
                   <Button href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} variant="ghost" size="lg">
-                    Ligue para {CLINIC_INFO.contact.phone}
+                    Call {CLINIC_INFO.contact.phone}
                   </Button>
                 </div>
               </AnimateOnScroll>
@@ -68,19 +58,19 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist bg-paper-secondary py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Seu projeto</span>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Your project</span>
             <h2 className="font-display text-33 text-forest-ink md:text-41">Planejamento de {service.name.toLowerCase()} para seu imóvel</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-ink/80 md:text-17">{service.clinicalExplanation}</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="border border-mist bg-paper p-6 md:p-8">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">Serviços que podemos conversar</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">Services que podemos conversar</h3>
               <ul className="space-y-3 font-body text-15 text-forest-ink/80">
                 {service.whoNeeds.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-greenAccent" />{item}</li>)}
               </ul>
             </div>
             <div className="border border-mist bg-paper p-6 md:p-8">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">Nosso jeito de trabalhar</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">How we work</h3>
               <ul className="space-y-3 font-body text-15 text-forest-ink/80">
                 {service.benefits.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-orangeAccent" />{item}</li>)}
               </ul>
@@ -105,7 +95,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
               </article>
             ))}
           </div>
-          <p className="mt-6 max-w-3xl font-body text-13 leading-relaxed text-forest-light">O orçamento e o prazo dependem do imóvel, dos materiais e do escopo combinado. A equipe conversa com você sobre esses detalhes antes do início.</p>
+          <p className="mt-6 max-w-3xl font-body text-13 leading-relaxed text-forest-light">The quote and timing depend on the property, materials and agreed scope. We will discuss the details before work begins.</p>
         </div>
       </section>
 
@@ -113,7 +103,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Quando entrar em contato</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Serviços que podemos conversar</h2>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Services que podemos conversar</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">
               Tell us what you have noticed or what you are planning. We can talk through the property and help clarify suitable next steps for {service.name.toLowerCase()}.
             </p>
@@ -135,7 +125,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist bg-paper-secondary py-16 md:py-24">
         <div className="mx-auto grid max-w-site grid-cols-1 gap-10 px-6 md:px-12 lg:grid-cols-12 lg:gap-16">
           <AnimateOnScroll animation="fade-right" className="lg:col-span-5">
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Orçamento e escopo do projeto</span>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Quote e escopo do project</span>
             <h2 className="font-display text-33 text-forest-ink md:text-41">Detalhes alinhados antes do início</h2>
             <p className="mt-4 font-body text-15 leading-relaxed text-forest-light md:text-17">{service.costTransparency.note}</p>
             <p className="mt-5 border-l-2 border-brand pl-4 font-body text-15 font-medium text-forest-ink">{service.costTransparency.baseRange}</p>
@@ -148,7 +138,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
               </ul>
             </div>
             <div className="border border-mist bg-paper p-6 md:p-7">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">O escopo do serviço inclui</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">O escopo do service inclui</h3>
               <ul className="space-y-3 font-body text-15 leading-relaxed text-forest-ink/80">
                 {service.costTransparency.whatIsIncluded.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand" />{item}</li>)}
               </ul>
@@ -161,8 +151,8 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">O que esperar</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Antes, durante e depois do serviço</h2>
-            <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">Cada imóvel e escopo de serviço é diferente. Converse com a equipe sobre os principais pontos do seu projeto.</p>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Antes, durante e depois do service</h2>
+            <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">Every property and job is different. Contact us to discuss the details of your project.</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
             {service.recoveryTimeline.map((item, index) => (
@@ -181,21 +171,21 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       {service.faqs.length > 0 && <section className="border-b border-mist bg-paper-secondary py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8} className="mb-8">
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Dúvidas frequentes</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Dúvidas sobre {service.name.toLowerCase()}</h2>
-            <p className="mt-3 max-w-2xl font-body text-15 leading-relaxed text-forest-light">Se tiver outra dúvida sobre seu imóvel, entre em contato com a equipe.</p>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Frequently asked questions</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Questions about {service.name.toLowerCase()}</h2>
+            <p className="mt-3 max-w-2xl font-body text-15 leading-relaxed text-forest-light">If you have another question about your property, contact our team.</p>
           </AnimateOnScroll>
           <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <Accordion items={service.faqs.map(({ question, answer }) => ({ question, answer }))} />
             </div>
             <AnimateOnScroll animation="fade-left" delay={0.1} className="bg-forest p-7 text-paper md:p-9 lg:col-span-5">
-              <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-paper/65">Fale com a equipe</span>
+              <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-paper/65">Talk to our team</span>
               <h3 className="font-display text-26">Uma conversa ajuda a planejar as próximas etapas.</h3>
-              <p className="mt-4 font-body text-15 leading-relaxed text-paper/75">Conte o que você precisa, tire suas dúvidas e converse sobre o orçamento para seu imóvel.</p>
+              <p className="mt-4 font-body text-15 leading-relaxed text-paper/75">Tell us what you need and discuss a quote for your property.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-                <Button href="/orcamento/" variant="paper" size="lg">Solicitar orçamento</Button>
-                <Button href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} variant="ghost-light" size="lg">Ligue para a equipe</Button>
+                <Button href="/orcamento/" variant="paper" size="lg">Request a quote</Button>
+                <Button href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} variant="ghost-light" size="lg">Call our team</Button>
               </div>
             </AnimateOnScroll>
           </div>
@@ -205,19 +195,17 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Conheça outros serviços</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Serviços relacionados</h2>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Explore other services</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Related services</h2>
           </AnimateOnScroll>
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-            {(RELATED_SERVICE_SLUGS[service.slug] ?? []).map((relatedSlug, index) => {
-              const related = SERVICES.find((item) => item.slug === relatedSlug);
-              if (!related) return null;
+            {relatedServices.map((related, index) => {
               return (
                 <AnimateOnScroll key={related.slug} animation="fade-up" delay={index * 0.08} className="h-full">
                   <Link href={`/${related.slug}/`} className="group flex h-full flex-col border border-mist bg-paper p-6 transition-colors hover:bg-paper-secondary md:p-7">
                     <h3 className="font-display text-21 text-forest-ink">{related.name}</h3>
                     <p className="mt-3 flex-1 font-body text-15 leading-relaxed text-forest-light">{related.shortDescription}</p>
-                    <span className="mt-6 font-body text-13 font-medium text-brand transition-colors group-hover:text-brand-hover">Ver serviço →</span>
+                    <span className="mt-6 font-body text-13 font-medium text-brand transition-colors group-hover:text-brand-hover">View service →</span>
                   </Link>
                 </AnimateOnScroll>
               );
@@ -229,10 +217,10 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
-            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Azzure Construção e Reforma</span>
-            <h2 className="font-display text-26 md:text-33">Conte o que você deseja fazer.</h2>
+            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">AM Property Solutions Mackay</span>
+            <h2 className="font-display text-26 md:text-33">Tell us what you need done.</h2>
           </div>
-          <Link href="/orcamento/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Solicitar orçamento</Link>
+          <Link href="/orcamento/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
         </div>
       </section>
     </div>

@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Pintura e reformas em Palmeiras de Goiás, GO',
+  title: 'Property services in Mackay, Queensland',
   description:
-    'A Azzure Construção e Reforma realiza pintura residencial, reformas e reparos em Palmeiras de Goiás. Ligue para +55 64 99932-1901 e converse sobre seu projeto.',
+    'AM Property Solutions Mackay offers handyman repairs, rubbish removal and outdoor property services. Call +61 410 048 618.',
   pathname: '/',
 });
 
@@ -41,13 +41,13 @@ export default function HomePage() {
       {/* SECTION 2: Trust / Highlights */}
       <HomeStats />
 
-      {/* SECTION 2A: Avaliações de clientes */}
+      {/* SECTION 2A: Customer reviews */}
       <HomeReviews />
 
-      {/* SECTION 3: Serviços residenciais */}
+      {/* SECTION 3: Property services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Serviços residenciais"
+        title="Property services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,28 +55,28 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose Azzure Construção e Reforma */}
+      {/* SECTION 4: Why Choose AM Property Solutions Mackay */}
       <HomeWhyUs />
 
-      {/* SECTION 5: Meet Nossa equipe */}
+      {/* SECTION 5: Meet Our team */}
       <HomeDentists />
 
-      {/* SECTION 6: Serviços em destaque */}
+      {/* SECTION 6: Services em destaque */}
       <HomeFeaturedTreatments />
 
       {/* SECTION 7: Before & After (Draggable Slider - Orchestrated Moment 3) */}
       <HomeBeforeAfter />
 
-      {/* SECTION 9: Serviços residenciais Projects */}
+      {/* SECTION 9: Property services Projects */}
       <HomeGallery />
 
-      {/* SECTION 10: Dúvidas frequentes */}
+      {/* SECTION 10: Frequently asked questions */}
       <HomeFaqs />
 
-      {/* SECTION 11: Região de atendimento and Horário de atendimento */}
+      {/* SECTION 11: Service area and Opening hours */}
       <HomeLocation />
 
-      {/* SECTION 12: Solicitar orçamento */}
+      {/* SECTION 12: Request a quote */}
       <HomeFinalCTA />
     </div>
   );

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   if (!post) return {};
 
   return createMetadata({
-    title: `${post.title} | Dicas para sua casa`,
+    title: `${post.title} | Property tips`,
     description: post.excerpt,
     pathname: `/dicas/${post.slug}/`,
     image: post.leadImage,
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe Azzure Construção e Reforma',
+      name: author?.name || 'Equipe AM Property Solutions Mackay',
     },
     publisher: {
       '@type': 'Organization',
@@ -86,7 +86,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Dicas para sua casa', path: '/dicas/' },
+              { name: 'Property tips', path: '/dicas/' },
               { name: post.category, path: '/dicas/' },
               { name: post.title, path: `/dicas/${post.slug}/` },
             ]}
@@ -176,7 +176,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
               <AnimateOnScroll animation="fade-up" duration={0.8}>
                 <div className="p-8 bg-mist/40 border border-mist my-8 shadow-sm">
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Serviço relacionado
+                    Service relacionado
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
                     {relatedService.name}
@@ -188,18 +188,18 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                     href={`/${relatedService.slug}/`}
                     className="font-body text-15 text-forest font-medium underline underline-offset-4"
                   >
-                    Conheça {relatedService.navLabel} →
+                    Explore {relatedService.navLabel} →
                   </Link>
                 </div>
               </AnimateOnScroll>
             )}
 
-            {/* Article Dúvidas frequentes */}
+            {/* Article Frequently asked questions */}
             {post.content.faqs && post.content.faqs.length > 0 && (
               <AnimateOnScroll animation="fade-up" duration={0.8}>
                 <div className="pt-8 border-t border-mist">
                   <h3 className="font-display text-26 text-forest-ink mb-6">
-                    Dúvidas sobre o assunto
+                    Questions about this topic
                   </h3>
                   <Accordion items={post.content.faqs} />
                 </div>
@@ -223,16 +223,16 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Dicas para sua casa
+                Property tips
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Converse com nossa equipe sobre seu projeto
+                Contact our team about your project
               </h2>
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <Button href="/orcamento/" variant="lime" size="lg">
-              Solicitar orçamento
+              Request a quote
             </Button>
           </AnimateOnScroll>
         </div>

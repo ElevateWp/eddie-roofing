@@ -28,7 +28,7 @@ interface PinnedHorizontalTrackProps {
 
 export default function PinnedHorizontalTrack({
   items,
-  title = 'Serviços residenciais',
+  title = 'Property services',
   className = '',
 }: PinnedHorizontalTrackProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -107,7 +107,7 @@ export default function PinnedHorizontalTrack({
         <div>
           <span className="font-body text-13 text-forest-ink/60 block mb-2">{title}</span>
           <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink leading-tight">
-            Serviços residenciais
+            Property services
           </h2>
         </div>
         <div className="flex items-center gap-4">
@@ -197,7 +197,7 @@ export default function PinnedHorizontalTrack({
                         : 'text-forest hover:text-forest-light'
                     }`}
                   >
-                    <span>Ver serviço →</span>
+                    <span>Ver service →</span>
                   </Link>
                   <span
                     className={`font-body text-13 tabular-nums ${
@@ -214,12 +214,12 @@ export default function PinnedHorizontalTrack({
       </div>
 
       {/* Mobile swipe hint — only visible on mobile */}
-      <div className="flex lg:hidden justify-center mt-4 gap-1.5 px-6" role="group" aria-label="Escolha um serviço">
+      <div className="flex lg:hidden justify-center mt-4 gap-1.5 px-6" role="group" aria-label="Escolha um service">
         {items.map((item, idx) => (
           <button
             key={item.id}
             type="button"
-            aria-label={`Ir para o serviço ${idx + 1}: ${item.title}`}
+            aria-label={`Ir para o service ${idx + 1}: ${item.title}`}
             aria-current={idx === currentIndex - 1 ? 'true' : undefined}
             onClick={() => {
               const viewport = scrollContainerRef.current;
@@ -233,7 +233,7 @@ export default function PinnedHorizontalTrack({
               setCurrentIndex(idx + 1);
             }}
             className={`h-3 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest ${
-              idx === currentIndex - 1 ? 'bg-[#111820] w-4' : 'bg-[#DCE2EB] w-3'
+              idx === currentIndex - 1 ? 'bg-[#171819] w-4' : 'bg-[#E1E3E5] w-3'
             }`}
           />
         ))}
