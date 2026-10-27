@@ -10,16 +10,16 @@ export default function HomeBeforeAfter() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <AnimateOnScroll animation="fade-right" duration={0.85} className="lg:col-span-5">
             <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-              Property project inspiration
+              Roofing projects
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
               Care in every detail
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-              Explore examples and get in touch to discuss your property project.
+              Roof images are illustrative. Contact us to discuss your roofing project.
             </p>
             <Link
-              href="/handyman-services/"
+              href="/roof-repairs/"
               className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
             >
               Explore our services →
@@ -30,26 +30,26 @@ export default function HomeBeforeAfter() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-repair.jpg"
-                  alt="Referência de service residencial"
+                  src="/images/roof-repair.png"
+                  alt="Illustrative roof image"
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#171819]/85 text-white font-body text-12 px-3 py-1">
-                  Imagem ilustrativa
+                <span className="absolute bottom-3 left-3 bg-[#172235]/85 text-white font-body text-12 px-3 py-1">
+                  Illustrative image
                 </span>
               </div>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-pipes.jpg"
-                  alt="Referência de reforma residencial"
+                  src="/images/roofb3-1.jpg"
+                  alt="Illustrative roofing image"
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#171819]/85 text-white font-body text-12 px-3 py-1">
-                  Imagem ilustrativa
+                <span className="absolute bottom-3 left-3 bg-[#172235]/85 text-white font-body text-12 px-3 py-1">
+                  Illustrative image
                 </span>
               </div>
             </div>

@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Property services in Mackay, Queensland',
+  title: 'Roof repairs and roofing services',
   description:
-    'AM Property Solutions Mackay offers handyman repairs, rubbish removal and outdoor property services. Call +61 410 048 618.',
+    'Ronan Short Roofing is a roofing contractor. Call +61 404 707 084 to discuss your roofing project.',
   pathname: '/',
 });
 
@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* SECTION 3: Property services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Property services"
+        title="Roofing services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose AM Property Solutions Mackay */}
+      {/* SECTION 4: Why Choose Ronan Short Roofing */}
       <HomeWhyUs />
 
       {/* SECTION 5: Meet Our team */}

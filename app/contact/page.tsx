@@ -11,8 +11,8 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and service area',
   description:
-    'Call AM Property Solutions Mackay on +61 410 048 618 to discuss property repairs, rubbish removal or outdoor work.',
-  pathname: '/contato/',
+    'Call Ronan Short Roofing on +61 404 707 084 to discuss roofing work.',
+  pathname: '/contact/',
 });
 
 export default function ContactPage() {
@@ -23,17 +23,17 @@ export default function ContactPage() {
         <TextureBackground variant="contact" className="opacity-30" />
 
         <div className="relative z-10 max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Contact', path: '/contato/' }]} />
+          <Breadcrumbs items={[{ name: 'Contact', path: '/contact/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
-                  Contact e quotes
+                  Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact AM Property Solutions Mackay." />
+                <WordRevealH1 text="Contact Ronan Short Roofing." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call us to discuss home repairs, rubbish removal, drywall repair or painting.
+                  Call us to discuss your roof and roofing project.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -41,7 +41,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* SECTION 2-7: Contact Methods Directory, Horários, Address & Map */}
+      {/* SECTION 2-7: Contact Methods Directory, Opening hours, address & Map */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -56,14 +56,14 @@ export default function ContactPage() {
                     Contact us
                   </h2>
                   <a
-                    href="/orcamento/"
+                    href="/quote/"
                     className="mb-5 inline-flex min-h-11 items-center bg-brand px-5 font-body text-15 font-semibold text-white transition-colors hover:bg-brand-hover"
                   >
                     Request a quote
                   </a>
 
                   <div className="divide-y divide-mist border-t border-b border-mist">
-                    {/* Ligue */}
+                    {/* Call */}
                     <div className="py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-mist/30 px-4 -mx-4 rounded-sm">
                       <div>
                         <span className="font-body text-13 text-forest font-semibold block">Call our team</span>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest font-medium">Property service enquiries</span>
+                      <span className="font-body text-13 text-forest font-medium">Roofing enquiries</span>
                     </div>
 
                     {/* Phone */}
@@ -101,7 +101,7 @@ export default function ContactPage() {
               <AnimateOnScroll animation="fade-up" duration={0.8} delay={0.2}>
                 <div>
                   <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                    Service area
+                    Availability
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-3">
                     {CLINIC_INFO.name}
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     {CLINIC_INFO.primaryLocation.directions}
                   </address>
                   <div className="p-4 bg-mist/40 border-l-2 border-forest font-body text-13 text-forest-ink/80 leading-relaxed">
-                    Call to confirm service area and availability.
+                    Call to discuss service availability.
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                 <div className="p-8 bg-forest text-paper flex flex-col justify-between aspect-[16/10] shadow-sm">
                   <div>
                     <span className="font-body text-13 text-lime block mb-2 font-medium uppercase tracking-wider">
-                      Service area
+                      Availability
                     </span>
                     <h3 className="font-display text-26 text-paper mb-2">
                       {CLINIC_INFO.name}
@@ -187,7 +187,7 @@ export default function ContactPage() {
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
-            <Button href="/orcamento/" variant="lime" size="lg">
+            <Button href="/quote/" variant="lime" size="lg">
               Request a quote Online
             </Button>
           </AnimateOnScroll>

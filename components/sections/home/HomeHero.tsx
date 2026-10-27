@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E1E3E5] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#D9E1EC] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,39 +74,39 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#F4511E;
-          border:1px solid #242526;
+          background:#123A78;
+          border:1px solid #0B2854;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
           font-weight:600;
           letter-spacing:0.01em;
-          box-shadow:0 6px 20px rgba(244,81,30,0.32);
+          box-shadow:0 6px 20px rgba(18,58,120,0.32);
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#FF6A35;
-          box-shadow:0 8px 26px rgba(244,81,30,0.45);
+          background:#2455A0;
+          box-shadow:0 8px 26px rgba(18,58,120,0.45);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #171819;
+          outline:2px solid #172235;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #E1E3E5;
+          border:1px solid #D9E1EC;
           border-radius:8px;
           font-size:12px;
-          color:#171819;
+          color:#172235;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#171819;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#172235;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#62666B;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#62666B;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#62666B;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#62666B;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#64748B;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#64748B;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#64748B;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#64748B;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#171819;
+          background:#172235;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#E1E3E5;
+          color:#D9E1EC;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#F4511E;
+          color:#123A78;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,20 +188,20 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="LANDFORGE"
+          word="RONAN SHORT ROOFING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#171819",
-            "--gp-field": "#171819",
+            "--gp-ink": "#172235",
+            "--gp-field": "#172235",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
           interactive={true}
           annotations={false}
-          enterLabel="Conheça a AM Property Solutions"
+          enterLabel="Explore Ronan Short Roofing"
           underlay={
             <div
               className="absolute inset-0 overflow-hidden pointer-events-none"
@@ -231,7 +231,7 @@ export default function HomeHero() {
                 transform: "scale(var(--gp-field-scale,1))",
               }}
             >
-              {/* Reparos hidráulicos photo at low opacity inside the glyph zoom destination */}
+              {/* Roofing photo at low opacity inside the glyph zoom destination */}
               <Image
                 src="/images/roof-repair.png"
                 alt=""
@@ -244,7 +244,7 @@ export default function HomeHero() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at 18% 12%, rgba(244,81,30,0.28), transparent 38%), radial-gradient(circle at 82% 22%, rgba(36,37,38,0.35), transparent 32%), linear-gradient(135deg, rgba(23,24,25,0.94) 0%, rgba(23,24,25,0.9) 50%, rgba(23,24,25,0.96) 100%)",
+                    "radial-gradient(circle at 18% 12%, rgba(18,58,120,0.28), transparent 38%), radial-gradient(circle at 82% 22%, rgba(11,40,84,0.35), transparent 32%), linear-gradient(135deg, rgba(23,34,53,0.94) 0%, rgba(23,34,53,0.9) 50%, rgba(23,34,53,0.96) 100%)",
                 }}
               />
             </div>
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>AM Property Solutions Mackay</span>
-                <span data-ch-hero-category>Mackay · Queensland<br />Mackay and surrounding areas</span>
+                <span data-ch-hero-brand>Ronan Short Roofing</span>
+                <span data-ch-hero-category>Roofing contractor<br />Call +61 404 707 084</span>
               </div>
-              <p data-ch-hero-intro>Property maintenance, repairs and outdoor services.</p>
+              <p data-ch-hero-intro>Roof repairs and roofing services.</p>
               <p data-ch-hero-support>
-                Reliable property maintenance, repairs and outdoor work in Mackay.
+                Ronan Short Roofing is a roofing contractor. Call to discuss the work your roof needs.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,61 +265,61 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Property maintenance and repairs, completed with care.
+              Roof repairs and roofing services.
             </h2>
 
             <div data-slipstream-features>
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>01</span>
-                  Repairs and maintenance
+                  Roof repairs
                 </h3>
                 <p>
-                  Friendly, efficient help with jobs around the house.
+                  Discuss your roof repair and the work required.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Outdoor property solutions
+                  Roofing services
                 </h3>
                 <p>
-                  Fencing, landscaping and earthworks for your property.
+                  Roofing work discussed around your property and project.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>03</span>
-                  Rubbish removal and repairs
+                  Talk through your project
                 </h3>
                 <p>
-                  Tell us what needs doing and we will discuss the details.
+                  Call Ronan Short Roofing to discuss the roof and next steps.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="https://wa.me/61410048618"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#F4511E] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(244,81,30,0.35)] transition-all hover:bg-[#FF6A35] hover:shadow-[0_8px_26px_rgba(244,81,30,0.45)]"
+                href="tel:+61404707084"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#123A78] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(18,58,120,0.35)] transition-all hover:bg-[#2455A0] hover:shadow-[0_8px_26px_rgba(18,58,120,0.45)]"
               >
-                Call or message
+                Call now
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="https://wa.me/61410048618"
+                href="tel:+61404707084"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#FF6A35]" />
-                Contact AM Property Solutions
+                <Phone size={15} className="text-[#2455A0]" />
+                Contact Ronan Short Roofing
               </a>
               <a
-                href="#home-stats"
+                href="/services/"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 font-body text-sm font-medium text-white/90 hover:bg-white/15 hover:text-white transition-all"
               >
-                <span>Explore services and reviews</span>
+                <span>Explore roofing services</span>
                 <ArrowDown size={15} />
               </a>
             </div>
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#171819",
+            color: "#172235",
             fontSize: 14,
             fontWeight: 500,
           }}

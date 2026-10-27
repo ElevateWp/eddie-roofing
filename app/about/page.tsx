@@ -14,36 +14,36 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Sobre a AM Property Solutions Mackay',
+  title: 'About Ronan Short Roofing',
   description:
-    'Meet AM Property Solutions Mackay and learn about our property services.',
-  pathname: '/sobre/',
+    'Learn about Ronan Short Roofing and our roofing services.',
+  pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'Mackay and surrounding areas',
-    title: 'Services for your property',
-    description: 'AM Property Solutions Mackay provides practical property repairs and maintenance. Contact us to discuss your job.',
+    year: 'Ronan Short Roofing',
+    title: 'Roofing contractor',
+    description: 'Ronan Short Roofing is a roofing contractor. Contact us to discuss your roof repairs or roofing project.',
   },
 ];
 
 const APPROACH_STEPS = [
   {
-    title: 'Escuta e planejamento',
-    description: 'Conversamos sobre o imóvel, o service desejado e os detalhes do project.',
+    title: 'Discuss your roofing project',
+    description: 'We discuss the roof, the work required and practical project details.',
   },
   {
-    title: 'Quote alinhado',
-    description: 'Alinhamos o escopo do service, os materiais e os prazos antes do início.',
+    title: 'Agree the project scope',
+    description: 'Discuss the roofing work, materials and timing before work begins.',
   },
   {
-    title: 'Cuidado na execução',
-    description: 'Executamos o service combinado com cuidado e atenção aos detalhes.',
+    title: 'Complete the agreed work',
+    description: 'The agreed roofing work is completed with care.',
   },
   {
-    title: 'Comunicação durante o service',
-    description: 'We keep you informed from the quote through to completion.',
+    title: 'Clear communication',
+    description: 'We discuss the project and next steps with you.',
   },
 ];
 
@@ -53,17 +53,17 @@ export default function AboutPage() {
       {/* SECTION 1: Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'About us', path: '/sobre/' }]} />
+          <Breadcrumbs items={[{ name: 'About us', path: '/about/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  Sobre a AM Property Solutions Mackay
+                  About Ronan Short Roofing
                 </span>
-                <WordRevealH1 text="Property maintenance, repairs and outdoor solutions across Mackay." />
+                <WordRevealH1 text="Roof repairs and roofing services." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="A AM Property Solutions Mackay realiza services de painting, property maintenance e repairs. As reviews destacam profissionalismo, eficiência e cuidado com cada detalhe." />
+                  <ScrubbedParagraph text="Ronan Short Roofing is a roofing contractor. Call to discuss the roof repairs or roofing work your property needs." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -72,8 +72,8 @@ export default function AboutPage() {
               <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
-                    <span>Ligue</span>
-                    <span className="font-medium text-forest">+61 410 048 618</span>
+                    <span>Call</span>
+                    <span className="font-medium text-forest">+61 404 707 084</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -88,10 +88,10 @@ export default function AboutPage() {
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <div className="max-w-2xl mb-16">
               <span className="font-body text-13 text-paper/60 uppercase tracking-wider block mb-2 font-medium">
-                Our Experience
+                About the business
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Local, licensed and ready to help
+                A roofing contractor for your project
               </h2>
             </div>
           </AnimateOnScroll>
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Equipe AM Property Solutions Mackay */}
+      {/* SECTION 4: Ronan Short Roofing */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,11 +171,11 @@ export default function AboutPage() {
                   Our team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Meet Ashton at AM Property Solutions
+                  Ronan Short Roofing
                 </h2>
               </div>
               <Link
-                href="/equipe/"
+                href="/team/"
                 className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
               >
                 View Team Details →
@@ -191,7 +191,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 5: Property services Work */}
+      {/* SECTION 5: Roofing services Work */}
       <section className="py-20 md:py-32 border-b border-mist overflow-hidden">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -201,19 +201,19 @@ export default function AboutPage() {
                   Our services
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-                  Services para cuidar e renovar seu imóvel
+                  Roofing services for your property
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Our team discusses handyman work, rubbish removal, drywall repairs, painting and the right steps for your property.
+                  Contact Ronan Short Roofing to discuss your roof, the work required and the next steps.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                    <span>O escopo e os detalhes do project são alinhados antes do início.</span>
+                    <span>We agree on the scope and project details before work begins.</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                    <span>Acabamento cuidadoso e atenção aos detalhes</span>
+                    <span>Careful workmanship and attention to detail</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -224,15 +224,15 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
-                      src="/images/plumbing-technician.jpg"
-                      alt="Service residencial em andamento"
+                      src="/images/roofing-hero.png"
+                      alt="Roofing work in progress"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
                   <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                    Service residencial
+                    Roofing project
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -259,42 +259,42 @@ export default function AboutPage() {
             <AnimateOnScroll animation="zoom-in" delay={0.1}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-repair.jpg"
-                  alt="Project residencial"
+                  src="/images/roof-repair.png"
+                  alt="Illustrative roofing project"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Referência de service residencial
+                  Illustrative roofing image
                 </div>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="zoom-in" delay={0.2}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-pipes.jpg"
-                  alt="Project de reparo residencial"
+                  src="/images/roofb3-1.jpg"
+                  alt="Illustrative roofing project image"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Property services
+                  Roofing services
                 </div>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="zoom-in" delay={0.3}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-hot-water.jpg"
-                  alt="Project residencial"
+                  src="/images/roof-saffron-walden-1024x768-1.jpg"
+                  alt="Illustrative roofing project"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Reparo residencial
+                  Roof repairs
                 </div>
               </div>
             </AnimateOnScroll>
@@ -320,10 +320,10 @@ export default function AboutPage() {
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <div className="flex flex-wrap items-center gap-4">
-              <Button href="/orcamento/" variant="lime" size="lg">
+              <Button href="/quote/" variant="lime" size="lg">
                 Request a quote
               </Button>
-              <Button href="/contato/" variant="ghost-light" size="lg">
+              <Button href="/contact/" variant="ghost-light" size="lg">
                 Contact us
               </Button>
             </div>

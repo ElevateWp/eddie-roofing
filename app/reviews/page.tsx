@@ -10,8 +10,8 @@ import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
   title: 'Customer reviews',
-  description: 'Read customer reviews for AM Property Solutions Mackay.',
-  pathname: '/avaliacoes/',
+  description: 'Read customer reviews for Ronan Short Roofing.',
+  pathname: '/reviews/',
 });
 
 export default function TestimonialsPage() {
@@ -20,12 +20,12 @@ export default function TestimonialsPage() {
       <section className="relative overflow-hidden border-b border-mist py-16 md:py-24">
         <TextureBackground variant="blog" className="opacity-20" />
         <div className="relative z-10 mx-auto max-w-site px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Reviews', path: '/avaliacoes/' }]} />
+          <Breadcrumbs items={[{ name: 'Reviews', path: '/reviews/' }]} />
           <div className="mt-8 max-w-3xl">
             <AnimateOnScroll animation="fade-right" duration={0.8}>
-              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">AM Property Solutions Mackay</span>
+              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">Ronan Short Roofing</span>
               <WordRevealH1 text="Customer reviews" />
-              <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">Rated {CLINIC_INFO.verifiedStats[0].value.toFixed(1)} out of 5 based on 7 Google reviews.</p>
+              <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">No customer reviews have been published yet.</p>
             </AnimateOnScroll>
           </div>
         </div>
@@ -34,23 +34,23 @@ export default function TestimonialsPage() {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <div className="mb-10 flex flex-col gap-4 border-b border-mist pb-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Google reviews</span>
-              <h2 className="font-display text-26 text-forest-ink md:text-33">What customers say</h2>
+              <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Customer feedback</span>
+              <h2 className="font-display text-26 text-forest-ink md:text-33">Reviews</h2>
             </div>
             <div className="border-l-2 border-brand pl-4">
-              <span className="block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Customer rating</span>
-              <span className="mt-1 block font-body text-12 text-forest-light">5.0 out of 5 · 7 reviews</span>
+              <span className="block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Business information</span>
+              <span className="mt-1 block font-body text-12 text-forest-light">No reviews yet</span>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {CUSTOMER_REVIEWS.map((avaliação, index) => (
-              <AnimateOnScroll key={avaliação.name} animation="fade-up" delay={index * 0.08} duration={0.8}>
+            {CUSTOMER_REVIEWS.map((review, index) => (
+              <AnimateOnScroll key={review.name} animation="fade-up" delay={index * 0.08} duration={0.8}>
                 <article className="h-full border border-mist bg-paper p-6 shadow-sm md:p-7">
-                  <div className="mb-4 flex items-center gap-1 text-[#F4511E]" aria-label="5 de 5 estrelas">★★★★★</div>
-                  <p className="font-body text-15 leading-relaxed text-forest-ink/85">{avaliação.text}</p>
+                  <div className="mb-4 flex items-center gap-1 text-[#123A78]" aria-label="Customer rating">★★★★★</div>
+                  <p className="font-body text-15 leading-relaxed text-forest-ink/85">{review.text}</p>
                   <div className="mt-6 border-t border-mist pt-4">
-                    <h3 className="font-display text-21 text-forest-ink">{avaliação.name}</h3>
-                    <span className="font-body text-13 text-forest-light">{avaliação.date}</span>
+                    <h3 className="font-display text-21 text-forest-ink">{review.name}</h3>
+                    <span className="font-body text-13 text-forest-light">{review.date}</span>
                   </div>
                 </article>
               </AnimateOnScroll>
@@ -60,8 +60,8 @@ export default function TestimonialsPage() {
       </section>
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">AM Property Solutions Mackay</span><h2 className="font-display text-26 md:text-33">Lets talk about your project</h2></div>
-          <Link href="/orcamento/" className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Ronan Short Roofing</span><h2 className="font-display text-26 md:text-33">Have a roofing project?</h2></div>
+          <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
         </div>
       </section>
     </div>

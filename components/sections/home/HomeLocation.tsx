@@ -13,7 +13,7 @@ export default function HomeLocation() {
         <AnimateOnScroll animation="fade-up" duration={0.8}>
           <div className="mb-16">
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-              Contact & Opening hours
+              Contact and opening hours
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink">
               Get in touch
@@ -22,7 +22,7 @@ export default function HomeLocation() {
         </AnimateOnScroll>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Columns 1–6: Address, Contact & Opening hours Table */}
+          {/* Columns 1–6: Address, Contact and opening hours Table */}
           <div className="lg:col-span-6 flex flex-col space-y-8">
             <AnimateOnScroll animation="fade-right" duration={0.85}>
               <div>
@@ -30,7 +30,7 @@ export default function HomeLocation() {
                   {CLINIC_INFO.name}
                 </h3>
                 <p className="font-body text-15 text-forest-ink/90 leading-relaxed mb-2">
-                  {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.city} {CLINIC_INFO.primaryLocation.postalCode}
+                  Roofing contractor
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
                   Get in touch to discuss your project and confirm availability.
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F4F5F6] border border-[#E1E3E5] px-3 py-1.5 text-12 text-[#171819]">
+                    <span key={highlight} className="bg-[#F4F6F9] border border-[#D9E1EC] px-3 py-1.5 text-12 text-[#172235]">
                       {highlight}
                     </span>
                   ))}
@@ -50,7 +50,7 @@ export default function HomeLocation() {
               </div>
             </AnimateOnScroll>
 
-            {/* Horários Table with Today highlighted with --lime */}
+            {/* Opening hours table with Today highlighted with --lime */}
             <AnimateOnScroll animation="fade-up" duration={0.85} delay={0.15}>
               <div>
                 <span className="font-body text-13 text-forest-ink/60 uppercase tracking-wider block mb-3 font-semibold">
@@ -75,7 +75,7 @@ export default function HomeLocation() {
                 >
                   Call now
                 </Button>
-                  <Button href="/contato/" variant="forest" size="md">
+                  <Button href="/contact/" variant="forest" size="md">
                   Contact us
                 </Button>
               </div>
@@ -87,14 +87,14 @@ export default function HomeLocation() {
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-technician.jpg"
-                  alt="Service residencial"
+                  src="/images/roofing-hero.png"
+                  alt="Roofing project"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  AM Property Solutions Mackay
+                  Ronan Short Roofing
                 </div>
               </div>
             </AnimateOnScroll>
@@ -103,10 +103,10 @@ export default function HomeLocation() {
               <div className="bg-paper border border-mist p-6 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Property services
+                    Roofing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Property repairs, maintenance and outdoor work
+                    Roof repairs and roofing work
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
                     Call to discuss the property service you need.
@@ -122,7 +122,7 @@ export default function HomeLocation() {
                     {CLINIC_INFO.contact.phone}
                   </span>
                   <Button
-                    href="/contato/"
+                    href="/contact/"
                     variant="forest"
                     size="sm"
                   >

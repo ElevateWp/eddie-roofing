@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   return createMetadata({
     title: `${post.title} | Property tips`,
     description: post.excerpt,
-    pathname: `/dicas/${post.slug}/`,
+    pathname: `/roofing-tips/${post.slug}/`,
     image: post.leadImage,
   });
 }
@@ -48,7 +48,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     title: p.title,
     subtitle: `${p.category} • ${p.readTime}`,
     description: p.excerpt,
-    href: `/dicas/${p.slug}/`,
+    href: `/roofing-tips/${p.slug}/`,
     theme: idx % 2 === 1 ? 'forest' : 'paper',
   }));
 
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe AM Property Solutions Mackay',
+      name: author?.name || 'Ronan Short Roofing team',
     },
     publisher: {
       '@type': 'Organization',
@@ -86,9 +86,9 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Property tips', path: '/dicas/' },
-              { name: post.category, path: '/dicas/' },
-              { name: post.title, path: `/dicas/${post.slug}/` },
+              { name: 'Property tips', path: '/roofing-tips/' },
+              { name: post.category, path: '/roofing-tips/' },
+              { name: post.title, path: `/roofing-tips/${post.slug}/` },
             ]}
           />
 
@@ -122,7 +122,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                   </div>
                   <div>
                     <Link
-                      href={`/equipe/${author.slug}/`}
+                      href={`/team/${author.slug}/`}
                       className="font-display text-17 text-forest-ink hover:text-forest font-medium block"
                     >
                       {author.name}
@@ -176,7 +176,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
               <AnimateOnScroll animation="fade-up" duration={0.8}>
                 <div className="p-8 bg-mist/40 border border-mist my-8 shadow-sm">
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Service relacionado
+                    Related service
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
                     {relatedService.name}
@@ -231,7 +231,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
-            <Button href="/orcamento/" variant="lime" size="lg">
+            <Button href="/quote/" variant="lime" size="lg">
               Request a quote
             </Button>
           </AnimateOnScroll>

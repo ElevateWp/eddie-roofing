@@ -7,29 +7,29 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 
 const HOME_FAQS: AccordionItem[] = [
   {
-    question: 'Quais services residenciais posso solicitar?',
-    answer: 'A AM Property Solutions atende services de painting, property maintenance, property repairs e hidráulicos, trincas, infiltrações e envernizamento de madeira.',
-    relatedLink: { href: '/servicos/', label: 'Explore our services →' },
+    question: 'What roofing work can I discuss?',
+    answer: 'Ronan Short Roofing is a roofing contractor. Call to discuss your roof repair or roofing project.',
+    relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'Does AM Property Solutions Mackay serve my area?',
-    answer: 'AM Property Solutions Mackay serves Mackay and surrounding areas.',
-    relatedLink: { href: '/contato/', label: 'Contact our team →' },
+    question: 'Does Ronan Short Roofing serve my area?',
+    answer: 'Call Ronan Short Roofing to discuss service availability.',
+    relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
-    question: 'Quais tipos de reparo são realizados?',
-    answer: 'We handle home repairs and property maintenance. Contact us to discuss the job you need done.',
-    relatedLink: { href: '/handyman-services/', label: 'Explore our services →' },
+    question: 'How do I discuss a roof repair?',
+    answer: 'Call +61 404 707 084 to discuss what you have noticed and the roofing work required.',
+    relatedLink: { href: '/roof-repairs/', label: 'Explore our services →' },
   },
   {
-    question: 'Como solicito um quote?',
+    question: 'How do I request a quote?',
     answer: `Call ${CLINIC_INFO.contact.phone} or send an enquiry using the quote form.`,
-    relatedLink: { href: '/orcamento/', label: 'Request a quote →' },
+    relatedLink: { href: '/quote/', label: 'Request a quote →' },
   },
   {
-    question: 'Como confirmo a disponibilidade?',
+    question: 'How can I check availability?',
     answer: `Call ${CLINIC_INFO.contact.phone} to discuss your property and check availability.`,
-    relatedLink: { href: '/contato/', label: 'Contact our team →' },
+    relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
 ];
 

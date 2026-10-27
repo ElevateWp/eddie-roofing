@@ -10,15 +10,15 @@ const REASONS = [
   },
   {
     title: 'Agreeing on the job scope',
-    description: 'Alinhe o escopo e os prazos do service para seu imóvel.',
+    description: 'Discuss the work scope and timing for your roofing project.',
   },
   {
     title: 'Planning the next steps',
     description: 'We will discuss the job, quote and next steps for your project.',
   },
   {
-    title: 'Services for your property',
-    description: 'Our services include fencing, landscaping, earthworks, rubbish removal, handyman work, drywall repairs and painting.',
+    title: 'Roofing services for your property',
+    description: 'Ronan Short Roofing is a roofing contractor. Call to discuss your roof and the work required.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomeWhyUs() {
                 How we work
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Property services to look after your home
+                Roofing work discussed with care
               </h2>
 
               <div className="divide-y divide-mist">
@@ -65,38 +65,38 @@ export default function HomeWhyUs() {
                 <div className="col-span-2 relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
-                    src="/images/plumbing-technician.jpg"
-                    alt="Service residencial"
+                    src="/images/roofing-hero.png"
+                    alt="Roofing project"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#171819]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Property maintenance
+                  <div className="absolute bottom-3 left-3 bg-[#172235]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                    Roofing services
                   </div>
                 </div>
                 {/* Additional home repairs imagery */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/plumbing-repair.jpg"
-                    alt="Project residencial"
+                    src="/images/roof-repair.png"
+                    alt="Roof repair"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
                   />
                 </div>
-                {/* Project residencial detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F4F5F6] overflow-hidden border border-mist shadow-sm">
+                {/* Roof repair detail */}
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F4F6F9] overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/plumbing-pipes.jpg"
-                    alt="Repairs and property care"
+                    src="/images/roofb3-1.jpg"
+                    alt="Roof repairs"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#171819]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                     Property repairs
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#172235]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                     Roof repairs
                   </div>
                 </div>
               </div>

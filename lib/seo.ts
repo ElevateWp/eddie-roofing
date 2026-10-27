@@ -18,7 +18,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/logo.png`;
+  const defaultImage = `${BASE_URL}/images/ronan-short-roofing-logo.png`;
 
   return {
     title: fullTitle,
@@ -110,7 +110,7 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Property maintenance, repairs and outdoor services',
+    serviceType: 'Roof repairs and roofing services',
     url: `${BASE_URL}${url}`,
     provider: {
       '@type': 'LocalBusiness',

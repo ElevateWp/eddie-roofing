@@ -11,17 +11,17 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'AM Property Solutions Mackay | Property services in Mackay',
+    default: 'Ronan Short Roofing | Roof repairs and roofing services',
     template: '%s',
   },
   description:
-    'Property maintenance, rubbish removal and outdoor services in Mackay. Call AM Property Solutions Mackay on +61 410 048 618.',
+    'Ronan Short Roofing is a roofing contractor. Call +61 404 707 084 to discuss roof repairs and roofing services.',
   keywords: [
-    'AM Property Solutions Mackay',
-    'property services Mackay and surrounding areas',
-    'property maintenance',
+    'Ronan Short Roofing',
+    'roof repairs',
+    'roofing contractor',
   ],
-  authors: [{ name: 'AM Property Solutions Mackay' }],
+  authors: [{ name: 'Ronan Short Roofing' }],
   icons: {
     icon: [
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
@@ -47,7 +47,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#FF8A50] selection:text-[#171819]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#DCE7F5] selection:text-[#172235]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />
