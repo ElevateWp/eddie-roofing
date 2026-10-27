@@ -9,10 +9,10 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roofing tips',
+  title: 'Construction tips',
   description:
-    'Roofing tips and information from Ronan Short Roofing.',
-  pathname: '/roofing-tips/',
+    'Construction information from Tim Green Construction.',
+  pathname: '/construction-tips/',
 });
 
 export default function BlogIndexPage() {
@@ -23,17 +23,17 @@ export default function BlogIndexPage() {
         <TextureBackground variant="blog" className="opacity-20" />
 
         <div className="relative z-10 max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Roofing tips', path: '/roofing-tips/' }]} />
+          <Breadcrumbs items={[{ name: 'Construction tips', path: '/construction-tips/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
-                  Roofing tips
+                  Construction tips
                 </span>
-                <WordRevealH1 text="Roofing information and tips." />
+                <WordRevealH1 text="Construction information and tips." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Read practical information about roof repairs and roofing projects.
+                  Read practical information about construction projects.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -60,7 +60,7 @@ export default function BlogIndexPage() {
                       {/* Title & Excerpt */}
                       <div className="lg:col-span-7">
                         <h2 className="font-display text-21 md:text-26 text-forest-ink group-hover:text-forest transition-colors mb-2">
-                          <Link href={`/roofing-tips/${post.slug}/`} className="no-underline text-inherit">
+                          <Link href={`/construction-tips/${post.slug}/`} className="no-underline text-inherit">
                             {post.title}
                           </Link>
                         </h2>
@@ -77,7 +77,7 @@ export default function BlogIndexPage() {
                       {/* Action */}
                       <div className="lg:col-span-2 text-left lg:text-right">
                         <Link
-                          href={`/roofing-tips/${post.slug}/`}
+                          href={`/construction-tips/${post.slug}/`}
                           className="font-body text-13 text-forest font-medium underline underline-offset-4 group-hover:text-forest-light"
                         >
                           Read Article →

@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and service area',
   description:
-    'Call Ronan Short Roofing on +61 404 707 084 to discuss roofing work.',
+    'Call Tim Green Construction on +61 428 935 377 to discuss your construction project.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact Ronan Short Roofing." />
+                <WordRevealH1 text="Contact Tim Green Construction." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call us to discuss your roof and roofing project.
+                  Call us to discuss your construction project.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest font-medium">Roofing enquiries</span>
+                      <span className="font-body text-13 text-forest font-medium">Construction enquiries</span>
                     </div>
 
                     {/* Phone */}
@@ -101,7 +101,7 @@ export default function ContactPage() {
               <AnimateOnScroll animation="fade-up" duration={0.8} delay={0.2}>
                 <div>
                   <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                    Availability
+                    Address and availability
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-3">
                     {CLINIC_INFO.name}
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     {CLINIC_INFO.primaryLocation.directions}
                   </address>
                   <div className="p-4 bg-mist/40 border-l-2 border-forest font-body text-13 text-forest-ink/80 leading-relaxed">
-                    Call to discuss service availability.
+                    Call to discuss your project and confirm availability.
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -139,13 +139,13 @@ export default function ContactPage() {
                 <div className="p-8 bg-forest text-paper flex flex-col justify-between aspect-[16/10] shadow-sm">
                   <div>
                     <span className="font-body text-13 text-lime block mb-2 font-medium uppercase tracking-wider">
-                      Availability
+                      Address and availability
                     </span>
                     <h3 className="font-display text-26 text-paper mb-2">
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    Call to check availability for your property.
+                    21 Scanlon St, Chadwick WA 6450, Australia
                     </p>
                   </div>
 

@@ -11,17 +11,17 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Ronan Short Roofing | Roof repairs and roofing services',
+    default: 'Tim Green Construction | Construction in Esperance',
     template: '%s',
   },
   description:
-    'Ronan Short Roofing is a roofing contractor. Call +61 404 707 084 to discuss roof repairs and roofing services.',
+    'Tim Green Construction is based in Chadwick, Esperance. Call +61 428 935 377 to discuss your construction project.',
   keywords: [
-    'Ronan Short Roofing',
-    'roof repairs',
-    'roofing contractor',
+    'Tim Green Construction',
+    'construction Esperance',
+    'construction company',
   ],
-  authors: [{ name: 'Ronan Short Roofing' }],
+  authors: [{ name: 'Tim Green Construction' }],
   icons: {
     icon: [
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
@@ -47,7 +47,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#DCE7F5] selection:text-[#172235]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#E8F5E9] selection:text-[#171717]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

@@ -10,7 +10,7 @@ import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
   title: 'Customer reviews',
-  description: 'Read customer reviews for Ronan Short Roofing.',
+  description: 'Read customer reviews for Tim Green Construction.',
   pathname: '/reviews/',
 });
 
@@ -23,7 +23,7 @@ export default function TestimonialsPage() {
           <Breadcrumbs items={[{ name: 'Reviews', path: '/reviews/' }]} />
           <div className="mt-8 max-w-3xl">
             <AnimateOnScroll animation="fade-right" duration={0.8}>
-              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">Ronan Short Roofing</span>
+              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">Tim Green Construction</span>
               <WordRevealH1 text="Customer reviews" />
               <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">No customer reviews have been published yet.</p>
             </AnimateOnScroll>
@@ -39,14 +39,14 @@ export default function TestimonialsPage() {
             </div>
             <div className="border-l-2 border-brand pl-4">
               <span className="block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Business information</span>
-              <span className="mt-1 block font-body text-12 text-forest-light">No reviews yet</span>
+              <span className="mt-1 block font-body text-12 text-forest-light">No customer reviews have been published yet.</span>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {CUSTOMER_REVIEWS.map((review, index) => (
               <AnimateOnScroll key={review.name} animation="fade-up" delay={index * 0.08} duration={0.8}>
                 <article className="h-full border border-mist bg-paper p-6 shadow-sm md:p-7">
-                  <div className="mb-4 flex items-center gap-1 text-[#123A78]" aria-label="Customer rating">★★★★★</div>
+                  <div className="mb-4 flex items-center gap-1 text-[#008F3D]" aria-label="Customer rating">★★★★★</div>
                   <p className="font-body text-15 leading-relaxed text-forest-ink/85">{review.text}</p>
                   <div className="mt-6 border-t border-mist pt-4">
                     <h3 className="font-display text-21 text-forest-ink">{review.name}</h3>
@@ -60,7 +60,7 @@ export default function TestimonialsPage() {
       </section>
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Ronan Short Roofing</span><h2 className="font-display text-26 md:text-33">Have a roofing project?</h2></div>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Tim Green Construction</span><h2 className="font-display text-26 md:text-33">Have a construction project?</h2></div>
           <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
         </div>
       </section>

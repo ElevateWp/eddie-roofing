@@ -7,19 +7,19 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 
 const HOME_FAQS: AccordionItem[] = [
   {
-    question: 'What roofing work can I discuss?',
-    answer: 'Ronan Short Roofing is a roofing contractor. Call to discuss your roof repair or roofing project.',
+    question: 'What construction work can I discuss?',
+    answer: 'Tim Green Construction is a construction company. Call to discuss your project and the work required.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'Does Ronan Short Roofing serve my area?',
-    answer: 'Call Ronan Short Roofing to discuss service availability.',
+    question: 'Where is Tim Green Construction located?',
+    answer: 'Tim Green Construction is based at 21 Scanlon St, Chadwick WA 6450. Call to discuss your project.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
-    question: 'How do I discuss a roof repair?',
-    answer: 'Call +61 404 707 084 to discuss what you have noticed and the roofing work required.',
-    relatedLink: { href: '/roof-repairs/', label: 'Explore our services →' },
+    question: 'How do I discuss a construction project?',
+    answer: 'Call +61 428 935 377 to discuss what you have noticed and the construction work required.',
+    relatedLink: { href: '/construction-repairs/', label: 'Explore our services →' },
   },
   {
     question: 'How do I request a quote?',

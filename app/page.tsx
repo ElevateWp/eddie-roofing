@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roof repairs and roofing services',
+  title: 'Construction projects in Esperance',
   description:
-    'Ronan Short Roofing is a roofing contractor. Call +61 404 707 084 to discuss your roofing project.',
+    'Tim Green Construction is based in Chadwick, Esperance. Call +61 428 935 377 to discuss your construction project.',
   pathname: '/',
 });
 
@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* SECTION 3: Property services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Roofing services"
+        title="Construction services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose Ronan Short Roofing */}
+      {/* SECTION 4: Why choose Tim Green Construction */}
       <HomeWhyUs />
 
       {/* SECTION 5: Meet Our team */}

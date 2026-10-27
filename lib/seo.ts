@@ -18,7 +18,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/ronan-short-roofing-logo.png`;
+  const defaultImage = `${BASE_URL}/images/tim-green-construction-logo.png`;
 
   return {
     title: fullTitle,
@@ -110,10 +110,10 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Roof repairs and roofing services',
+    serviceType: 'Construction services',
     url: `${BASE_URL}${url}`,
     provider: {
-      '@type': 'LocalBusiness',
+      '@type': 'GeneralContractor',
       name: CLINIC_INFO.name,
     },
   };

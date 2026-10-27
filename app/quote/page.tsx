@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Request a quote',
   description:
-    'Contact Ronan Short Roofing to discuss your job and request a quote. Call +61 404 707 084.',
+    'Contact Tim Green Construction to discuss your project and request a quote. Call +61 428 935 377.',
   pathname: '/quote/',
 });
 
@@ -34,7 +34,7 @@ const BOOKING_STEPS = [
   {
     step: 4,
     title: 'Complete the agreed work',
-    description: 'The agreed roofing work is carried out at your property.',
+    description: 'The agreed construction work is carried out at your property.',
   },
 ];
 
@@ -50,7 +50,7 @@ export default function BookAppointmentPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
-                  Roofing enquiry
+                  Construction enquiry
                 </span>
                 <WordRevealH1 text="Request a quote." />
                 <div className="mt-8">
@@ -94,7 +94,7 @@ export default function BookAppointmentPage() {
                     Next steps
                   </h2>
                   <p className="font-body text-15 text-forest-ink/80 leading-relaxed mb-6">
-                    We will discuss your roofing project and explain the next steps.
+                    We will discuss your construction project and explain the next steps.
                   </p>
                 </div>
               </AnimateOnScroll>

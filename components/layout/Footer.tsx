@@ -13,8 +13,8 @@ export default function Footer() {
             <div className="flex items-center gap-4 mb-5">
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/images/ronan-short-roofing-logo.png"
-                  alt="Ronan Short Roofing logo"
+                  src="/images/tim-green-construction-logo.png"
+                  alt="Tim Green Construction logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,29 +22,29 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Ronan Short Roofing
+                  Tim Green Construction
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Roof repairs · Roofing services
+                  Construction · Esperance
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Roof repairs and roofing services. Contact us to discuss your project.
+              Construction projects in Esperance. Call us to discuss your project.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href="tel:+61404707084" className="hover:text-paper">+61 404 707 084</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Ronan Short Roofing</a>}
-              {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
+              <a href="tel:+61404707084" className="hover:text-paper">+61 428 935 377</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Tim Green Construction</a>}
+              {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}<a href="https://www.facebook.com/people/Tim-Green-Construction-Esperance/61563166163360/" target="_blank" rel="noopener noreferrer" className="hover:text-paper">Facebook</a>
             </div>
           </div>
 
           <div className="lg:col-span-6 lg:pl-12 flex flex-col justify-between">
             <div className="p-6 bg-paper/5 border border-mist/20 rounded-none shadow-sm">
               <span className="font-body text-13 text-lime block mb-2 font-semibold uppercase tracking-wider">
-                Roofing services
+                Construction services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need to discuss a roofing job? Call Ronan Short Roofing.
+                Need to discuss a project? Call Tim Green Construction.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -90,12 +90,12 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Ronan Short Roofing
+              Tim Green Construction
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/team/" className="text-paper/80 hover:text-lime transition-colors">
-                  Ronan Short Roofing
+                  Tim Green Construction
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -124,12 +124,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services/" className="text-paper/80 hover:text-lime transition-colors">
-                  Roofing services
+                  Construction services
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-tips/" className="text-paper/80 hover:text-lime transition-colors">
-                  Roofing tips
+                <Link href="/construction-tips/" className="text-paper/80 hover:text-lime transition-colors">
+                  Project tips
                 </Link>
               </li>
               <li>
@@ -168,9 +168,9 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <span className="text-paper/50 block text-13">Availability:</span>
+                <span className="text-paper/50 block text-13">Address:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
-                  Contact us for service availability.
+                  21 Scanlon St, Chadwick WA 6450, Australia
                 </address>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Ronan Short Roofing</a>
+            <a href="/" className="hover:text-paper">Tim Green Construction</a>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 const http = require('http');
 
 const routes = [
-  '/', '/about/', '/reviews/', '/team/', '/team/ronan-short-roofing/',
-  '/roof-repairs/', '/metal-roofing/', '/roof-restoration/', '/gutters-and-downpipes/',
-  '/services/', '/quote/', '/contact/', '/roofing-tips/',
-  '/roofing-tips/roof-leak-what-to-note/', '/robots.txt', '/sitemap.xml',
+  '/', '/about/', '/reviews/', '/team/', '/team/tim-green-construction/',
+  '/new-construction/', '/renovations-and-extensions/', '/sheds-and-outbuildings/', '/construction-repairs/',
+  '/services/', '/quote/', '/contact/', '/construction-tips/',
+  '/construction-tips/planning-a-construction-project/', '/robots.txt', '/sitemap.xml',
 ];
 
 async function checkRoute(path) {

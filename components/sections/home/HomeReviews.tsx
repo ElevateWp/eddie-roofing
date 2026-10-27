@@ -17,7 +17,7 @@ export default function HomeReviews() {
           {CUSTOMER_REVIEWS.map((review, index) => (
             <AnimateOnScroll key={review.name} animation="fade-up" delay={index * 0.1} duration={0.8}>
               <article className="h-full bg-paper border border-mist p-6 md:p-7 shadow-sm">
-                <div className="mb-4 flex items-center gap-1 text-[#123A78]" aria-label="Customer rating">★★★★★</div>
+                <div className="mb-4 flex items-center gap-1 text-[#008F3D]" aria-label="Customer rating">★★★★★</div>
                 <p className="font-body text-15 text-forest-ink/85 leading-relaxed">{review.text}</p>
                 <div className="mt-6 border-t border-mist pt-4">
                   <h3 className="font-display text-17 text-forest-ink">{review.name}</h3>
