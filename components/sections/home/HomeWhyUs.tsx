@@ -10,15 +10,15 @@ const REASONS = [
   },
   {
     title: 'Agreeing on the job scope',
-    description: 'Discuss the work scope and timing for your construction project.',
+    description: 'Discuss the work scope and timing for your gutter cleaning.',
   },
   {
     title: 'Planning the next steps',
     description: 'We will discuss the job, quote and next steps for your project.',
   },
   {
-    title: 'Construction projects for your property',
-    description: 'Tim Green Construction is based in Esperance. Call to discuss your project and the work required.',
+    title: 'Gutter cleaning for your property',
+    description: 'Esperance Gutter Cleaning is based in Esperance. Call to discuss your project and the work required.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomeWhyUs() {
                 How we work
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Construction work discussed clearly
+                Gutter cleaning discussed clearly
               </h2>
 
               <div className="divide-y divide-mist">
@@ -66,37 +66,37 @@ export default function HomeWhyUs() {
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
                     src="/images/roofing-hero.png"
-                    alt="Construction project"
+                    alt="Gutter cleaning project"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#171717]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Construction projects
+                  <div className="absolute bottom-3 left-3 bg-[#111111]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                    Gutter cleaning
                   </div>
                 </div>
                 {/* Additional home repairs imagery */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/roof-repair.png"
-                    alt="Construction project"
+                    alt="Gutter cleaning project"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
                   />
                 </div>
-                {/* Construction project detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F4F8F4] overflow-hidden border border-mist shadow-sm">
+                {/* Gutter cleaning project detail */}
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F5F5F5] overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/roofb3-1.jpg"
-                    alt="Construction work"
+                    alt="Gutter cleaning"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#171717]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                     Construction work
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#111111]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                     Gutter cleaning
                   </div>
                 </div>
               </div>

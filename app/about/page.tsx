@@ -14,32 +14,32 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About Tim Green Construction',
+  title: 'About Esperance Gutter Cleaning',
   description:
-    'Learn about Tim Green Construction and discuss your project.',
+    'Learn about Esperance Gutter Cleaning and discuss your project.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'Tim Green Construction',
-    title: 'Construction company',
-    description: 'Tim Green Construction is a construction company. Contact us to discuss your construction projects or construction project.',
+    year: 'Esperance Gutter Cleaning',
+    title: 'Gutter cleaning service',
+    description: 'Esperance Gutter Cleaning is a gutter cleaning service. Contact us to discuss your gutter cleanings or gutter cleaning.',
   },
 ];
 
 const APPROACH_STEPS = [
   {
-    title: 'Discuss your construction project',
+    title: 'Discuss your gutter cleaning',
     description: 'We discuss the roof, the work required and practical project details.',
   },
   {
     title: 'Agree the project scope',
-    description: 'Discuss the construction work, materials and timing before work begins.',
+    description: 'Discuss the gutter cleaning work, materials and timing before work begins.',
   },
   {
     title: 'Complete the agreed work',
-    description: 'The agreed construction work is completed with care.',
+    description: 'The agreed gutter cleaning work is completed with care.',
   },
   {
     title: 'Clear communication',
@@ -59,11 +59,11 @@ export default function AboutPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About Tim Green Construction
+                  About Esperance Gutter Cleaning
                 </span>
-                <WordRevealH1 text="Construction repairs and construction services." />
+                <WordRevealH1 text="Gutter cleaning and home maintenance in Esperance." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Tim Green Construction is a construction company. Call to discuss the construction projects or construction work your property needs." />
+                  <ScrubbedParagraph text="Esperance Gutter Cleaning provides gutter cleaning and home maintenance in Esperance, Western Australia. Call to discuss your property and arrange a suitable time." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Call</span>
-                    <span className="font-medium text-forest">+61 428 935 377</span>
+                    <span className="font-medium text-forest">+61 497 298 855</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 About the business
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                A construction company for your project
+                Gutter cleaning for Esperance properties
               </h2>
             </div>
           </AnimateOnScroll>
@@ -106,7 +106,7 @@ export default function AboutPage() {
               >
                 {/* Year Marker */}
                 <div className="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 rounded-full bg-forest border-2 border-lime flex items-center justify-center" />
-                <span className="font-display text-21 text-lime block mb-1">
+                <span className="font-display text-21 text-[#666666] block mb-1">
                   {item.year}
                 </span>
                 <h3 className="font-display text-21 md:text-26 text-paper mb-2">
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Tim Green Construction */}
+      {/* SECTION 4: Esperance Gutter Cleaning */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,14 +171,14 @@ export default function AboutPage() {
                   Our team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Tim Green Construction
+                  Esperance Gutter Cleaning
                 </h2>
               </div>
               <Link
                 href="/team/"
                 className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
               >
-                View Team Details →
+                About the business →
               </Link>
             </div>
           </AnimateOnScroll>
@@ -191,7 +191,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 5: Construction services Work */}
+      {/* SECTION 5: Gutter cleaning services Work */}
       <section className="py-20 md:py-32 border-b border-mist overflow-hidden">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -201,10 +201,10 @@ export default function AboutPage() {
                   Our services
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-                  Construction work for your property
+                  Gutter cleaning work for your property
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Contact Tim Green Construction to discuss your roof, the work required and the next steps.
+                  Contact Esperance Gutter Cleaning to discuss your roof, the work required and the next steps.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
@@ -225,14 +225,14 @@ export default function AboutPage() {
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
                       src="/images/roofing-hero.png"
-                      alt="Construction work in progress"
+                      alt="Gutter cleaning work in progress"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
                   <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                    Construction project
+                    Gutter cleaning
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -260,13 +260,13 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roof-repair.png"
-                  alt="Illustrative construction project"
+                  alt="Illustrative gutter cleaning"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Illustrative construction image
+                  Illustrative gutter cleaning image
                 </div>
               </div>
             </AnimateOnScroll>
@@ -274,13 +274,13 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roofb3-1.jpg"
-                  alt="Illustrative construction project image"
+                  alt="Illustrative gutter cleaning image"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Construction services
+                  Gutter cleaning services
                 </div>
               </div>
             </AnimateOnScroll>
@@ -288,13 +288,13 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roof-saffron-walden-1024x768-1.jpg"
-                  alt="Illustrative construction project"
+                  alt="Illustrative gutter cleaning"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Construction repairs
+                  Gutter cleaning repairs
                 </div>
               </div>
             </AnimateOnScroll>

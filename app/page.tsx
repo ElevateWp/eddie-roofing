@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Construction projects in Esperance',
+  title: 'Gutter cleaning in Esperance',
   description:
-    'Tim Green Construction is based in Chadwick, Esperance. Call +61 428 935 377 to discuss your construction project.',
+    'Esperance Gutter Cleaning is based in Esperance, Western Australia. Call +61 497 298 855 to discuss gutter cleaning and home maintenance.',
   pathname: '/',
 });
 
@@ -44,10 +44,10 @@ export default function HomePage() {
       {/* SECTION 2A: Customer reviews */}
       <HomeReviews />
 
-      {/* SECTION 3: Property services */}
+      {/* SECTION 3: Gutter cleaning services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Construction services"
+        title="Gutter cleaning services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,10 +55,10 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose Tim Green Construction */}
+      {/* SECTION 4: Why choose Esperance Gutter Cleaning */}
       <HomeWhyUs />
 
-      {/* SECTION 5: Meet Our team */}
+      {/* SECTION 5: About the business */}
       <HomeDentists />
 
       {/* SECTION 6: Services em destaque */}
@@ -67,7 +67,7 @@ export default function HomePage() {
       {/* SECTION 7: Before & After (Draggable Slider - Orchestrated Moment 3) */}
       <HomeBeforeAfter />
 
-      {/* SECTION 9: Property services Projects */}
+      {/* SECTION 9: Gutter cleaning services Projects */}
       <HomeGallery />
 
       {/* SECTION 10: Frequently asked questions */}

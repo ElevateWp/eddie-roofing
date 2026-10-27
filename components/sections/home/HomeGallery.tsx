@@ -9,7 +9,7 @@ const GALLERY_IMAGES = [
       '/images/roofing-hero.png', '/images/roof-repair.png', '/images/roofb3-1.jpg',
       '/images/roof-saffron-walden-1024x768-1.jpg', '/images/roofb3-1.jpg',
     ];
-    return { src: images[index % images.length], alt: 'Illustrative construction image' };
+    return { src: images[index % images.length], alt: 'Illustrative gutter cleaning image' };
   }),
 ];
 
@@ -18,10 +18,10 @@ export default function HomeGallery() {
     <section id="galeria-de-servicos" className="relative z-20 w-full bg-paper py-20 md:py-32 border-t border-mist overflow-hidden">
       <div className="max-w-site mx-auto px-6 md:px-12">
         <AnimateOnScroll animation="fade-up" duration={0.8} className="mb-16">
-          <span className="font-body text-13 text-[#008F3D] block mb-2 font-medium uppercase tracking-wider">
-            Tim Green Construction
+          <span className="font-body text-13 text-[#111111] block mb-2 font-medium uppercase tracking-wider">
+            Esperance Gutter Cleaning
           </span>
-          <h2 className="font-display text-33 md:text-41 text-[#171717]">Construction projects</h2>
+          <h2 className="font-display text-33 md:text-41 text-[#111111]">Gutter cleaning projects</h2>
           <p className="mt-3 max-w-2xl font-body text-15 leading-relaxed text-forest-light">Roof images are illustrative. Contact us to discuss your project.</p>
         </AnimateOnScroll>
 
@@ -31,7 +31,7 @@ export default function HomeGallery() {
               key={`${item.src}-${index}`}
               animation={index === 0 ? 'fade-right' : 'fade-down'}
               duration={0.85}
-              className={`${index === 0 ? 'md:col-span-5' : 'md:col-span-7'} min-h-[300px] md:min-h-[420px] relative bg-[#F4F8F4] overflow-hidden border border-[#DCE7DD] shadow-sm`}
+              className={`${index === 0 ? 'md:col-span-5' : 'md:col-span-7'} min-h-[300px] md:min-h-[420px] relative bg-[#F5F5F5] overflow-hidden border border-[#E2E2E2] shadow-sm`}
             >
               <MediaParallax speed={index === 0 ? 0.06 : 0.08} className="w-full h-full">
                 <Image
@@ -53,7 +53,7 @@ export default function HomeGallery() {
               animation="zoom-in"
               duration={0.8}
               delay={(index % 3) * 0.1}
-              className="aspect-[4/3] relative bg-[#F4F8F4] overflow-hidden border border-[#DCE7DD] shadow-sm"
+              className="aspect-[4/3] relative bg-[#F5F5F5] overflow-hidden border border-[#E2E2E2] shadow-sm"
             >
               <MediaParallax speed={0.05 + (index % 3) * 0.01} className="w-full h-full">
                 <Image

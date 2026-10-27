@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: { DEFAULT: '#FFFFFF', secondary: '#F4F8F4' },
-        forest: { DEFAULT: '#111A14', ink: '#171717', light: '#5F6B62', navy: '#111A14' },
-        brand: { DEFAULT: '#008F3D', black: '#171717', hover: '#00A94F', soft: '#E8F5E9', navy: '#111A14', text: '#171717', secondaryText: '#5F6B62', border: '#DCE7DD' },
-        lime: '#59B82D', greenAccent: '#59B82D', orangeAccent: '#59B82D', mist: '#DCE7DD', softBlue: '#E8F5E9', redAccent: '#008F3D', royalBlueAccent: '#111A14',
-        navy: { DEFAULT: '#111A14', dark: '#111A14' },
+        paper: { DEFAULT: '#FFFFFF', secondary: '#F5F5F5' },
+        forest: { DEFAULT: '#050505', ink: '#111111', light: '#666666', navy: '#050505' },
+        brand: { DEFAULT: '#111111', black: '#050505', hover: '#333333', soft: '#F5F5F5', navy: '#050505', text: '#111111', secondaryText: '#666666', border: '#E2E2E2' },
+        lime: '#FFFFFF', greenAccent: '#FFFFFF', orangeAccent: '#FFFFFF', mist: '#E2E2E2', softBlue: '#F5F5F5', redAccent: '#111111', royalBlueAccent: '#050505',
+        navy: { DEFAULT: '#050505', dark: '#050505' },
       },
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', '-apple-system', 'sans-serif'],

@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-mist/20">
           <div className="lg:col-span-6">
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
+              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#050505] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/images/tim-green-construction-logo.png"
-                  alt="Tim Green Construction logo"
+                  src="/images/logo.png"
+                  alt="Esperance Gutter Cleaning logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,29 +22,29 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Tim Green Construction
+                  Esperance Gutter Cleaning
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Construction · Esperance
+                  Gutter cleaning · Esperance
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Construction projects in Esperance. Call us to discuss your project.
+              Gutter cleaning and home maintenance in Esperance. Call to discuss your property.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href="tel:+61404707084" className="hover:text-paper">+61 428 935 377</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Tim Green Construction</a>}
-              {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}<a href="https://www.facebook.com/people/Tim-Green-Construction-Esperance/61563166163360/" target="_blank" rel="noopener noreferrer" className="hover:text-paper">Facebook</a>
+              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">+61 497 298 855</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Esperance Gutter Cleaning</a>}
+              {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}<a href="https://www.facebook.com/EsperanceGutterCleaning/" target="_blank" rel="noopener noreferrer" className="hover:text-paper">Facebook</a>
             </div>
           </div>
 
           <div className="lg:col-span-6 lg:pl-12 flex flex-col justify-between">
             <div className="p-6 bg-paper/5 border border-mist/20 rounded-none shadow-sm">
               <span className="font-body text-13 text-lime block mb-2 font-semibold uppercase tracking-wider">
-                Construction services
+                Gutter cleaning and home maintenance
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need to discuss a project? Call Tim Green Construction.
+                Need gutter cleaning or home maintenance? Call us.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -90,12 +90,12 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Tim Green Construction
+              Esperance Gutter Cleaning
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
-                <Link href="/team/" className="text-paper/80 hover:text-lime transition-colors">
-                  Tim Green Construction
+                <Link href="/about/" className="text-paper/80 hover:text-lime transition-colors">
+                  Esperance Gutter Cleaning
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -124,12 +124,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services/" className="text-paper/80 hover:text-lime transition-colors">
-                  Construction services
+                  Gutter cleaning and home maintenance
                 </Link>
               </li>
               <li>
-                <Link href="/construction-tips/" className="text-paper/80 hover:text-lime transition-colors">
-                  Project tips
+                <Link href="/gutter-care/" className="text-paper/80 hover:text-lime transition-colors">
+                  Gutter care tips
                 </Link>
               </li>
               <li>
@@ -170,7 +170,7 @@ export default function Footer() {
               <div>
                 <span className="text-paper/50 block text-13">Address:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
-                  21 Scanlon St, Chadwick WA 6450, Australia
+                  1 Andrew St, Esperance WA 6450, Australia
                 </address>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Tim Green Construction</a>
+            <a href="/" className="hover:text-paper">Esperance Gutter Cleaning</a>
           </div>
         </div>
       </div>

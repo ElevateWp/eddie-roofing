@@ -18,7 +18,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/tim-green-construction-logo.png`;
+  const defaultImage = `${BASE_URL}/images/logo.png`;
 
   return {
     title: fullTitle,
@@ -65,7 +65,7 @@ export function createMetadata({
 export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'GeneralContractor',
+    '@type': 'HomeAndConstructionBusiness',
     '@id': `${BASE_URL}/#business`,
     name: CLINIC_INFO.name,
     legalName: CLINIC_INFO.legalName,
@@ -110,7 +110,7 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Construction services',
+    serviceType: 'Gutter cleaning and home maintenance',
     url: `${BASE_URL}${url}`,
     provider: {
       '@type': 'GeneralContractor',

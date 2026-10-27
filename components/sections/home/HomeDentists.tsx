@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { TiltedGridHero } from '@/components/ui/tilted-grid-hero';
 
 const TEAM_IMAGES = [
-  { src: '/images/roofing-hero.png', alt: 'Illustrative construction project image' },
-  { src: '/images/roof-repair.png', alt: 'Illustrative construction project image' },
-  { src: '/images/roofb3-1.jpg', alt: 'Illustrative construction project image' },
-  { src: '/images/roof-saffron-walden-1024x768-1.jpg', alt: 'Illustrative construction project image' },
+  { src: '/images/roofing-hero.png', alt: 'Illustrative gutter cleaning image' },
+  { src: '/images/roof-repair.png', alt: 'Illustrative gutter cleaning image' },
+  { src: '/images/roofb3-1.jpg', alt: 'Illustrative gutter cleaning image' },
+  { src: '/images/roof-saffron-walden-1024x768-1.jpg', alt: 'Illustrative gutter cleaning image' },
 ];
 
 export default function HomeDentists() {
@@ -27,20 +27,20 @@ export default function HomeDentists() {
           <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-paper via-paper/10 via-30% to-paper/85" />
           <div className="relative z-20 flex h-full flex-col items-center px-5 py-10 text-center md:py-14">
             <span className="font-body text-13 font-medium uppercase tracking-[0.18em] text-forest-ink/60">
-              Construction company
+              Gutter cleaning service
             </span>
             <h2 className="mt-3 max-w-3xl font-display text-26 text-balance text-forest-ink md:text-41">
-              Tim Green Construction
+              Esperance Gutter Cleaning
             </h2>
             <div className="mt-auto flex flex-col items-center pb-1">
               <p className="max-w-lg text-balance font-body text-15 leading-relaxed text-forest-ink/70">
-                Tim Green Construction is a construction company. Contact us to discuss your project and the work required.
+                Esperance Gutter Cleaning is a gutter cleaning service. Contact us to discuss your project and the work required.
               </p>
               <Link
                 href="/team/"
-                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#008F3D] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#008F3D]/20 transition-transform hover:-translate-y-0.5"
+                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#111111] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#111111]/20 transition-transform hover:-translate-y-0.5"
               >
-                Discuss your construction project <span className="ml-2" aria-hidden="true">→</span>
+                Discuss your gutter cleaning <span className="ml-2" aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

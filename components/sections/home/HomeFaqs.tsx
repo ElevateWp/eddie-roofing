@@ -7,19 +7,19 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 
 const HOME_FAQS: AccordionItem[] = [
   {
-    question: 'What construction work can I discuss?',
-    answer: 'Tim Green Construction is a construction company. Call to discuss your project and the work required.',
+    question: 'What services are available?',
+    answer: 'Ask about gutter cleaning, downpipe cleaning and home maintenance. Call to discuss your property.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'Where is Tim Green Construction located?',
-    answer: 'Tim Green Construction is based at 21 Scanlon St, Chadwick WA 6450. Call to discuss your project.',
+    question: 'Where is Esperance Gutter Cleaning located?',
+    answer: 'Esperance Gutter Cleaning is based at 1 Andrew St, Esperance WA 6450. Call to discuss your project.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
-    question: 'How do I discuss a construction project?',
-    answer: 'Call +61 428 935 377 to discuss what you have noticed and the construction work required.',
-    relatedLink: { href: '/construction-repairs/', label: 'Explore our services →' },
+    question: 'How do I arrange gutter cleaning?',
+    answer: 'Call +61 497 298 855 to discuss what you have noticed and the gutter cleaning required.',
+    relatedLink: { href: '/gutter-cleaning/', label: 'Explore our services →' },
   },
   {
     question: 'How do I request a quote?',

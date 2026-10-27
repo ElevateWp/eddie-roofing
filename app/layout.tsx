@@ -11,19 +11,21 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Tim Green Construction | Construction in Esperance',
+    default: 'Esperance Gutter Cleaning | Gutter cleaning in Esperance',
     template: '%s',
   },
   description:
-    'Tim Green Construction is based in Chadwick, Esperance. Call +61 428 935 377 to discuss your construction project.',
+    'Esperance Gutter Cleaning provides gutter cleaning in Esperance, WA. Call +61 497 298 855 to discuss your property.',
   keywords: [
-    'Tim Green Construction',
-    'construction Esperance',
-    'construction company',
+    'Esperance Gutter Cleaning',
+    'gutter cleaning Esperance',
+    'downpipe cleaning Esperance',
+    'home maintenance Esperance',
   ],
-  authors: [{ name: 'Tim Green Construction' }],
+  authors: [{ name: 'Esperance Gutter Cleaning' }],
   icons: {
     icon: [
+      { url: '/favicon.png', type: 'image/png' },
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
     ],
@@ -47,7 +49,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#E8F5E9] selection:text-[#171717]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F5F5F5] selection:text-[#111111]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

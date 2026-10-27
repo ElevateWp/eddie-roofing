@@ -44,7 +44,7 @@ export default function CountingNumber({
         },
         onUpdate: () => {
           if (decimals > 0) {
-            setDisplayValue(obj.count.toFixed(decimals).replace(".", ","));
+            setDisplayValue(obj.count.toFixed(decimals));
           } else {
             setDisplayValue(Math.round(obj.count).toLocaleString("en-AU"));
           }

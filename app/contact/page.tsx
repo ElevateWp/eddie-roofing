@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and service area',
   description:
-    'Call Tim Green Construction on +61 428 935 377 to discuss your construction project.',
+    'Call Esperance Gutter Cleaning on +61 497 298 855 to discuss your gutter cleaning.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact Tim Green Construction." />
+                <WordRevealH1 text="Contact Esperance Gutter Cleaning." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call us to discuss your construction project.
+                  Call us to discuss your gutter cleaning.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest font-medium">Construction enquiries</span>
+                      <span className="font-body text-13 text-forest font-medium">Gutter cleaning enquiries</span>
                     </div>
 
                     {/* Phone */}
@@ -145,7 +145,7 @@ export default function ContactPage() {
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    21 Scanlon St, Chadwick WA 6450, Australia
+                    1 Andrew St, Esperance WA 6450, Australia
                     </p>
                   </div>
 

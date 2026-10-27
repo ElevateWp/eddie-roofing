@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#DCE7DD] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E2E2E2] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,39 +74,39 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#008F3D;
-          border:1px solid #111A14;
+          background:#111111;
+          border:1px solid #050505;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
           font-weight:600;
           letter-spacing:0.01em;
-          box-shadow:0 6px 20px rgba(0,143,61,0.32);
+          box-shadow:0 6px 20px rgba(5,5,5,0.28);
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#00A94F;
-          box-shadow:0 8px 26px rgba(0,143,61,0.45);
+          background:#333333;
+          box-shadow:0 8px 26px rgba(5,5,5,0.36);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #171717;
+          outline:2px solid #111111;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #DCE7DD;
+          border:1px solid #E2E2E2;
           border-radius:8px;
           font-size:12px;
-          color:#171717;
+          color:#111111;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#171717;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#111111;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#5F6B62;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#5F6B62;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#5F6B62;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#5F6B62;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#666666;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#666666;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#666666;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#666666;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#171717;
+          background:#111111;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#DCE7DD;
+          color:#E2E2E2;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#008F3D;
+          color:#111111;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,20 +188,20 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="TIM GREEN CONSTRUCTION"
+          word="ESPERANCE GUTTER CLEANING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#171717",
-            "--gp-field": "#171717",
+            "--gp-ink": "#111111",
+            "--gp-field": "#111111",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
           interactive={true}
           annotations={false}
-          enterLabel="Explore Tim Green Construction"
+          enterLabel="Explore gutter cleaning"
           underlay={
             <div
               className="absolute inset-0 overflow-hidden pointer-events-none"
@@ -244,7 +244,7 @@ export default function HomeHero() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at 18% 12%, rgba(0,143,61,0.28), transparent 38%), radial-gradient(circle at 82% 22%, rgba(0,169,79,0.35), transparent 32%), linear-gradient(135deg, rgba(23,34,53,0.94) 0%, rgba(23,34,53,0.9) 50%, rgba(23,34,53,0.96) 100%)",
+                    "radial-gradient(circle at 18% 12%, rgba(0,0,0,0.16), transparent 38%), radial-gradient(circle at 82% 22%, rgba(0,0,0,0.12), transparent 32%), linear-gradient(135deg, rgba(5,5,5,0.94) 0%, rgba(5,5,5,0.9) 50%, rgba(5,5,5,0.96) 100%)",
                 }}
               />
             </div>
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>Tim Green Construction</span>
-                <span data-ch-hero-category>Construction company<br />Call +61 428 935 377</span>
+                <span data-ch-hero-brand>Esperance Gutter Cleaning</span>
+                <span data-ch-hero-category>Gutter cleaning service<br />Call +61 497 298 855</span>
               </div>
-              <p data-ch-hero-intro>Construction projects in Esperance.</p>
+              <p data-ch-hero-intro>Gutter cleaning in Esperance.</p>
               <p data-ch-hero-support>
-                Tim Green Construction is a construction company. Call to discuss the work your roof needs.
+                Local gutter cleaning and home maintenance in Esperance. Call to discuss your property.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,61 +265,61 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Construction projects in Esperance.
+              Gutter cleaning in Esperance.
             </h2>
 
             <div data-slipstream-features>
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>01</span>
-                  Construction projects
+                  Gutter cleaning
                 </h3>
                 <p>
-                  Discuss your construction project and the work required.
+                  Discuss your gutter cleaning and the work required.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Construction services
+                  Home maintenance
                 </h3>
                 <p>
-                  Construction work discussed around your property and project.
+                  Gutter cleaning and home maintenance for Esperance properties.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>03</span>
-                  Talk through your project
+                  Talk through your property
                 </h3>
                 <p>
-                  Call Tim Green Construction to discuss the project and next steps.
+                  Call Esperance Gutter Cleaning to discuss the project and next steps.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="tel:+61404707084"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#008F3D] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(0,143,61,0.35)] transition-all hover:bg-[#00A94F] hover:shadow-[0_8px_26px_rgba(0,143,61,0.45)]"
+                href="tel:+61497298855"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#111111] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(5,5,5,0.28)] transition-all hover:bg-[#333333] hover:shadow-[0_8px_26px_rgba(5,5,5,0.36)]"
               >
                 Call now
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="tel:+61404707084"
+                href="tel:+61497298855"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#00A94F]" />
-                Contact Tim Green Construction
+                <Phone size={15} className="text-[#333333]" />
+                Contact us
               </a>
               <a
                 href="/services/"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 font-body text-sm font-medium text-white/90 hover:bg-white/15 hover:text-white transition-all"
               >
-                <span>Explore construction services</span>
+                <span>Explore gutter cleaning services</span>
                 <ArrowDown size={15} />
               </a>
             </div>
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#171717",
+            color: "#111111",
             fontSize: 14,
             fontWeight: 500,
           }}

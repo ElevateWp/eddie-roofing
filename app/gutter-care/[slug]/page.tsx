@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   return createMetadata({
     title: `${post.title} | Property tips`,
     description: post.excerpt,
-    pathname: `/construction-tips/${post.slug}/`,
+    pathname: `/gutter-care/${post.slug}/`,
     image: post.leadImage,
   });
 }
@@ -48,7 +48,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     title: p.title,
     subtitle: `${p.category} • ${p.readTime}`,
     description: p.excerpt,
-    href: `/construction-tips/${p.slug}/`,
+    href: `/gutter-care/${p.slug}/`,
     theme: idx % 2 === 1 ? 'forest' : 'paper',
   }));
 
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Tim Green Construction',
+      name: author?.name || 'Esperance Gutter Cleaning',
     },
     publisher: {
       '@type': 'Organization',
@@ -86,9 +86,9 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Property tips', path: '/construction-tips/' },
-              { name: post.category, path: '/construction-tips/' },
-              { name: post.title, path: `/construction-tips/${post.slug}/` },
+              { name: 'Property tips', path: '/gutter-care/' },
+              { name: post.category, path: '/gutter-care/' },
+              { name: post.title, path: `/gutter-care/${post.slug}/` },
             ]}
           />
 

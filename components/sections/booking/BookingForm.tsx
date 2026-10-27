@@ -27,7 +27,7 @@ export default function BookingForm() {
     fullName: '',
     phone: '',
     email: '',
-    service: 'new-construction',
+    service: 'gutter-cleaning',
     preferredDate: '',
     preferredTime: 'Morning',
     notes: '',
@@ -83,7 +83,7 @@ export default function BookingForm() {
 
         <div className="p-6 bg-paper/10 border border-mist/20 mb-8 space-y-2 font-body text-15">
           <div className="flex justify-between">
-            <span className="text-paper/60">Construction service:</span>
+            <span className="text-paper/60">Gutter cleaning service:</span>
             <span className="text-paper font-medium">
               {SERVICES.find((s) => s.slug === formData.service)?.name || formData.service}
             </span>
@@ -108,7 +108,7 @@ export default function BookingForm() {
                 fullName: '',
                 phone: '',
                 email: '',
-                service: 'new-construction',
+                service: 'gutter-cleaning',
                 preferredDate: '',
                 preferredTime: 'Morning',
                 notes: '',
@@ -140,7 +140,7 @@ export default function BookingForm() {
           Request a quote
         </h3>
         <p className="font-body text-15 text-forest-ink/70">
-          Tell us what construction work you need. We will contact you to discuss the project and next steps.
+          Tell us what gutter cleaning work you need. We will contact you to discuss the project and next steps.
         </p>
       </div>
 
@@ -162,7 +162,7 @@ export default function BookingForm() {
           required
         />
         {errors.fullName && (
-          <span className="font-body text-13 text-[#5F6B62] transition-all duration-200">
+          <span className="font-body text-13 text-[#666666] transition-all duration-200">
             {errors.fullName}
           </span>
         )}
@@ -182,12 +182,12 @@ export default function BookingForm() {
               setFormData({ ...formData, phone: e.target.value });
               if (errors.phone) setErrors({ ...errors, phone: undefined });
             }}
-            placeholder="+61 428 935 377"
+            placeholder="+61 497 298 855"
             className="w-full px-4 py-3 text-15 focus:border-forest transition-colors"
             required
           />
           {errors.phone && (
-            <span className="font-body text-13 text-[#5F6B62]">{errors.phone}</span>
+            <span className="font-body text-13 text-[#666666]">{errors.phone}</span>
           )}
         </div>
 
@@ -208,7 +208,7 @@ export default function BookingForm() {
             required
           />
           {errors.email && (
-            <span className="font-body text-13 text-[#5F6B62]">{errors.email}</span>
+            <span className="font-body text-13 text-[#666666]">{errors.email}</span>
           )}
         </div>
       </div>
@@ -216,7 +216,7 @@ export default function BookingForm() {
       {/* Service Selection */}
       <div className="flex flex-col space-y-1.5">
         <label htmlFor="service" className="font-body text-13 text-forest-ink/70">
-          Construction service <span className="text-forest">*</span>
+          Gutter cleaning service <span className="text-forest">*</span>
         </label>
         <select
           id="service"
@@ -229,7 +229,7 @@ export default function BookingForm() {
               {s.name}
             </option>
           ))}
-          <option value="general-consultation">Other construction work</option>
+          <option value="general-consultation">Other gutter cleaning work</option>
         </select>
       </div>
 
@@ -252,7 +252,7 @@ export default function BookingForm() {
             required
           />
           {errors.preferredDate && (
-            <span className="font-body text-13 text-[#5F6B62]">{errors.preferredDate}</span>
+            <span className="font-body text-13 text-[#666666]">{errors.preferredDate}</span>
           )}
         </div>
 
@@ -276,14 +276,14 @@ export default function BookingForm() {
       {/* Additional project notes */}
       <div className="flex flex-col space-y-1.5">
         <label htmlFor="notes" className="font-body text-13 text-forest-ink/70">
-          Tell us about the construction work (optional)
+          Tell us about the gutter cleaning work (optional)
         </label>
         <textarea
           id="notes"
           rows={3}
           value={formData.notes}
           onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-          placeholder="Describe the construction work or project you would like to discuss..."
+          placeholder="Describe the gutter cleaning work or project you would like to discuss..."
           className="w-full px-4 py-3 text-15 focus:border-forest transition-colors resize-none"
         />
       </div>
