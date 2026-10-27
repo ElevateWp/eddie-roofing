@@ -169,15 +169,6 @@ export default function Navbar() {
             <span>Request a quote</span>
           </Link>
 
-          <Button
-            href="/quote/"
-            variant="forest"
-            size="sm"
-            className="h-9 w-[160px] hidden xl:inline-flex items-center justify-center gap-2 px-2 text-12 sm:text-13 font-semibold whitespace-nowrap"
-          >
-            <span>Request a quote</span>
-          </Button>
-
           {/* Mobile / Tablet Hamburger Toggle */}
           <button
             type="button"
