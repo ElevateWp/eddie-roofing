@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'J.M.K Roofing',
+      name: author?.name || 'Reliance Roof Restoration',
     },
     publisher: {
       '@type': 'Organization',

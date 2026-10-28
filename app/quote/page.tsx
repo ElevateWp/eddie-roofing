@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Request a quote',
   description:
-    'Contact J.M.K Roofing to discuss your project and request a quote. Call +61 404 026 017.',
+    'Contact Reliance Roof Restoration to discuss your project and request a quote. Call +61 449 615 054.',
   pathname: '/quote/',
 });
 

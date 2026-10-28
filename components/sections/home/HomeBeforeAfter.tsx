@@ -19,7 +19,7 @@ export default function HomeBeforeAfter() {
               Roof images are illustrative. Contact us to discuss your roofing project.
             </p>
             <Link
-              href="/roof-repairs/"
+              href="/roof-restoration/"
               className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
             >
               Explore our services →
@@ -36,7 +36,7 @@ export default function HomeBeforeAfter() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#91D8E8]/85 text-[#151515] font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#234A9B]/90 text-white font-body text-12 px-3 py-1">
                   Illustrative image
                 </span>
               </div>
@@ -48,7 +48,7 @@ export default function HomeBeforeAfter() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#91D8E8]/85 text-[#151515] font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#234A9B]/90 text-white font-body text-12 px-3 py-1">
                   Illustrative image
                 </span>
               </div>

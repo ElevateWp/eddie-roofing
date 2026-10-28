@@ -33,7 +33,7 @@ export default function HomeLocation() {
                   Roofing service
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
-                  Call to discuss your project, service coverage and current availability.
+                  Based in Quakers Hill, Reliance Roof Restoration serves Greater Western Sydney. Call to discuss your roof and current availability.
                 </p>
                 {CLINIC_INFO.primaryLocation.landmarks && (
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F3F8FA] border border-[#D5E9EE] px-3 py-1.5 text-12 text-[#151515]">
+                    <span key={highlight} className="bg-[#F3F6FC] border border-[#D7E0EF] px-3 py-1.5 text-12 text-[#17233D]">
                       {highlight}
                     </span>
                   ))}
@@ -94,7 +94,7 @@ export default function HomeLocation() {
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  J.M.K Roofing
+                  Reliance Roof Restoration
                 </div>
               </div>
             </AnimateOnScroll>
@@ -106,7 +106,7 @@ export default function HomeLocation() {
                     Roofing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Roofing services for your property
+                    Roof restoration for your property
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
                     Call to discuss the property service you need.

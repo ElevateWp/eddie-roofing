@@ -36,18 +36,18 @@ export default function Navbar() {
     <>
     <header
       data-site-header
-      className="fixed top-0 left-0 right-0 z-50 bg-[#111111] text-white py-2.5 sm:py-3 border-b border-[#111111] shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#173778] text-white py-2.5 sm:py-3 border-b border-[#173778] shadow-sm"
     >
       <div className="mx-auto flex max-w-site items-center justify-between px-4 sm:px-6 md:px-12">
         {/* Brand Logo - compact on mobile */}
         <Link
           href="/"
           className="group flex items-center no-underline focus-visible:outline-offset-4 flex-shrink-0 min-w-0"
-          aria-label="J.M.K Roofing"
+          aria-label="Reliance Roof Restoration"
         >
           <Image
-            src="/images/jmk-roofing-logo.png"
-            alt="J.M.K Roofing logo"
+            src="/images/reliance-roof-restoration-logo.png"
+            alt="Reliance Roof Restoration logo"
             width={240}
             height={88}
             priority
@@ -84,7 +84,7 @@ export default function Navbar() {
             {/* Dropdown Panel with Pure White Background and Smooth Shadow */}
             {servicesDropdownOpen && (
               <div className="absolute top-full -left-4 pt-2 w-64 z-50 animate-fade-in">
-                <div className="p-2 bg-[#111111] text-white border border-[#63C4D9] shadow-[0_12px_36px_rgba(17,17,17,0.08)] rounded-2xl">
+                <div className="p-2 bg-[#173778] text-white border border-[#173778] shadow-[0_12px_36px_rgba(17,17,17,0.08)] rounded-2xl">
                   <div className="space-y-0.5">
                     {SERVICES.map((s) => (
                       <Link
@@ -92,8 +92,8 @@ export default function Navbar() {
                         href={`/${s.slug}/`}
                         className={`block px-3.5 py-2 text-14 font-body transition-all duration-200 rounded-xl ${
                           pathname === `/${s.slug}/`
-                            ? 'bg-[#63C4D9] text-[#151515] font-semibold shadow-xs'
-                            : 'text-white/85 hover:bg-[#63C4D9] hover:text-[#151515] hover:translate-x-1'
+                            ? 'bg-[#173778] text-white font-semibold shadow-xs'
+                            : 'text-white/85 hover:bg-[#234A9B] hover:text-white hover:translate-x-1'
                         }`}
                       >
                         <span className="block font-medium">{s.navLabel}</span>
@@ -128,7 +128,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/about/"
+            href="/team/"
             className={`font-body text-15 py-2 transition-colors ${
               pathname?.startsWith('/team')
                 ? 'text-white font-semibold'
@@ -164,7 +164,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
           <Link
             href="/quote/"
-            className="hidden xl:inline-flex h-10 w-[176px] items-center justify-center rounded-md border border-[#91D8E8] bg-[#91D8E8] px-3 font-body text-13 font-semibold text-[#151515] transition-colors hover:border-[#63C4D9] hover:bg-[#63C4D9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#91D8E8] whitespace-nowrap"
+            className="hidden xl:inline-flex h-10 w-[176px] items-center justify-center rounded-md border border-[#234A9B] bg-[#234A9B] px-3 font-body text-13 font-semibold text-white transition-colors hover:border-[#173778] hover:bg-[#173778] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#234A9B] whitespace-nowrap"
           >
             <span>Get a quote</span>
           </Link>
@@ -173,7 +173,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2 text-white focus-visible:outline-offset-2 flex items-center justify-center cursor-pointer rounded-lg hover:bg-[#63C4D9] transition-colors"
+            className="xl:hidden p-2 text-white focus-visible:outline-offset-2 flex items-center justify-center cursor-pointer rounded-lg hover:bg-[#173778] transition-colors"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-controls="mobile-navigation"
             aria-expanded={mobileMenuOpen}
@@ -185,7 +185,7 @@ export default function Navbar() {
                 }`}
               />
               <span
-                className={`w-full h-[2px] bg-[#91D8E8] transition-opacity duration-200 ${
+                className={`w-full h-[2px] bg-[#234A9B] transition-opacity duration-200 ${
                   mobileMenuOpen ? 'opacity-0' : 'opacity-100'
                 }`}
               />
@@ -205,7 +205,7 @@ export default function Navbar() {
         id="mobile-navigation"
         aria-label="Mobile navigation"
         aria-hidden={!mobileMenuOpen}
-        className={`xl:hidden fixed inset-x-0 top-[95px] sm:top-[110px] md:top-[121px] bottom-0 bg-[#111111] text-white border-t border-[#63C4D9] overflow-y-auto overscroll-contain px-4 sm:px-6 py-5 sm:py-6 flex flex-col justify-between z-[999] transition-all duration-300 ease-in-out shadow-2xl ${
+        className={`xl:hidden fixed inset-x-0 top-[95px] sm:top-[110px] md:top-[121px] bottom-0 bg-[#173778] text-white border-t border-[#173778] overflow-y-auto overscroll-contain px-4 sm:px-6 py-5 sm:py-6 flex flex-col justify-between z-[999] transition-all duration-300 ease-in-out shadow-2xl ${
           mobileMenuOpen
             ? 'opacity-100 pointer-events-auto translate-y-0'
             : 'opacity-0 pointer-events-none -translate-y-4'
@@ -244,8 +244,8 @@ export default function Navbar() {
                     }}
                     className={`flex min-h-11 items-center rounded-md px-3 font-body text-15 transition-colors ${
                       pathname === `/${s.slug}/`
-                        ? 'bg-[#63C4D9] font-semibold text-white'
-                        : 'text-white hover:bg-[#63C4D9] hover:text-[#151515]'
+                        ? 'bg-[#173778] font-semibold text-white'
+                        : 'text-white hover:bg-[#234A9B] hover:text-white'
                     }`}
                   >
                     {s.navLabel}
@@ -255,12 +255,12 @@ export default function Navbar() {
             )}
           </div>
 
-          <div className="pt-4 border-t border-[#D5E9EE] flex flex-col space-y-3">
+          <div className="pt-4 border-t border-[#D7E0EF] flex flex-col space-y-3">
             <Link
               href="/about/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname === '/about/' ? 'text-white font-semibold' : 'text-white hover:text-[#626B70]'
+                pathname === '/about/' ? 'text-white font-semibold' : 'text-white hover:text-[#5F6B80]'
               }`}
             >
               About us
@@ -269,16 +269,16 @@ export default function Navbar() {
               href="/reviews/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname?.startsWith('/reviews') ? 'text-white font-semibold' : 'text-white hover:text-[#626B70]'
+                pathname?.startsWith('/reviews') ? 'text-white font-semibold' : 'text-white hover:text-[#5F6B80]'
               }`}
             >
               Reviews
             </Link>
             <Link
-              href="/about/"
+              href="/team/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname?.startsWith('/team') ? 'text-white font-semibold' : 'text-white hover:text-[#626B70]'
+                pathname?.startsWith('/team') ? 'text-white font-semibold' : 'text-white hover:text-[#5F6B80]'
               }`}
             >
               Our Team
@@ -294,7 +294,7 @@ export default function Navbar() {
               href="/roofing-advice/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname?.startsWith('/roofing-advice') ? 'text-white font-semibold' : 'text-white hover:text-[#626B70]'
+                pathname?.startsWith('/roofing-advice') ? 'text-white font-semibold' : 'text-white hover:text-[#5F6B80]'
               }`}
             >
               Roofing advice
@@ -303,7 +303,7 @@ export default function Navbar() {
               href="/contact/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname === '/contact/' ? 'text-white font-semibold' : 'text-white hover:text-[#626B70]'
+                pathname === '/contact/' ? 'text-white font-semibold' : 'text-white hover:text-[#5F6B80]'
               }`}
             >
               Contact
@@ -311,7 +311,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="pt-6 mt-6 border-t border-[#D5E9EE] flex flex-col gap-3 pb-8">
+        <div className="pt-6 mt-6 border-t border-[#D7E0EF] flex flex-col gap-3 pb-8">
           <Button
             href="/quote/"
             variant="forest"
@@ -323,7 +323,7 @@ export default function Navbar() {
           </Button>
           <a
             href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
-            className="text-center font-body text-15 text-white py-2 font-semibold hover:text-[#626B70] transition-colors"
+            className="text-center font-body text-15 text-white py-2 font-semibold hover:text-[#5F6B80] transition-colors"
           >
             Call: {CLINIC_INFO.contact.phone}
           </a>

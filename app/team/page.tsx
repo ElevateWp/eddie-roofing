@@ -9,7 +9,7 @@ import HomeDentists from '@/components/sections/home/HomeDentists';
 
 export const metadata: Metadata = createMetadata({
   title: 'Our team',
-  description: 'J.M.K Roofing is a roofing contractor. Call +61 404 026 017 to discuss roof repairs, maintenance and other roofing services.',
+  description: 'Reliance Roof Restoration Greater Western Sydney offers roof restoration, cleaning, painting, repointing and tile repairs. Call +61 449 615 054.',
   pathname: '/team/',
 });
 
@@ -20,9 +20,9 @@ export default function TeamPage() {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <Breadcrumbs items={[{ name: 'Our team', path: '/team/' }]} />
           <div className="mt-8 max-w-3xl">
-            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">J.M.K Roofing</span>
-            <WordRevealH1 text="J.M.K Roofing" />
-            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Jordan and the team at J.M.K Roofing handle roof repairs, re-roofs, maintenance, gutter cleaning, leak detection and leaf guard installation. Call to discuss your project.</p>
+            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Reliance Roof Restoration</span>
+            <WordRevealH1 text="Meet the Reliance roof restoration team." />
+            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Vipin and Kiran are praised by customers for clear communication and professional roof restoration work across Greater Western Sydney. Contact the team to discuss your roof.</p>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function TeamPage() {
 
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">J.M.K Roofing</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Reliance Roof Restoration</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
           <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest">Request a quote</Link>
         </div>
       </section>

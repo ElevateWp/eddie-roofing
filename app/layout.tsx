@@ -11,19 +11,19 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'J.M.K Roofing | Roofing made easy',
+    default: 'Reliance Roof Restoration Greater Western Sydney | Roof restoration',
     template: '%s',
   },
   description:
-    'J.M.K Roofing is a roofing contractor offering roof repairs, maintenance, gutter cleaning and more. Call +61 404 026 017 to request a quote.',
+    'Reliance Roof Restoration Greater Western Sydney provides roof restoration, cleaning, painting, repointing and tile repairs in Greater Western Sydney. Call +61 449 615 054.',
   keywords: [
-    'J.M.K Roofing',
-    'J.M.K Roofing',
-    'roof maintenance',
-    'roof repairs',
-    'J.M.K Roofing',
+    'Reliance Roof Restoration Greater Western Sydney',
+    'roof restoration Quakers Hill',
+    'roof cleaning Greater Western Sydney',
+    'roof painting Quakers Hill',
+    'roof repointing Sydney',
   ],
-  authors: [{ name: 'J.M.K Roofing' }],
+  authors: [{ name: 'Reliance Roof Restoration' }],
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
@@ -50,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F8FA] selection:text-[#151515]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F6FC] selection:text-[#17233D]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

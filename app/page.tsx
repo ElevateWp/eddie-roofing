@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'J.M.K Roofing',
+  title: 'Reliance Roof Restoration Greater Western Sydney',
   description:
-    'J.M.K Roofing provides roof repairs and other roofing services. Call +61 404 026 017 to discuss your project and request a quote.',
+    'Roof restoration, roof cleaning, painting, repointing and tile repairs in Greater Western Sydney. Call +61 449 615 054 to request a quote.',
   pathname: '/',
 });
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose J.M.K Roofing */}
+      {/* SECTION 4: Why choose Reliance Roof Restoration Greater Western Sydney Greater Western Sydney Greater Western Sydney */}
       <HomeWhyUs />
 
       {/* SECTION 5: About the business */}

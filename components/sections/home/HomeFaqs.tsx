@@ -12,14 +12,14 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'What areas does J.M.K Roofing service?',
-    answer: 'Call J.M.K Roofing to confirm service coverage and discuss your project.',
+    question: 'What areas does Reliance Roof Restoration Greater Western Sydney service?',
+    answer: 'The team serves Greater Western Sydney from Quakers Hill. Call to discuss your property and availability.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
     question: 'How do I arrange a roof repair?',
-    answer: 'Call +61 404 026 017 to discuss what you have noticed and the roof repair required.',
-    relatedLink: { href: '/roof-repairs/', label: 'Explore our services →' },
+    answer: 'Call +61 449 615 054 to discuss your roof restoration, cleaning, painting, repointing or tile repair.',
+    relatedLink: { href: '/roof-restoration/', label: 'Explore our services →' },
   },
   {
     question: 'How do I request a quote?',

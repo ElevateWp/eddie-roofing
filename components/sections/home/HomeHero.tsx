@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#D5E9EE] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#D7E0EF] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,8 +74,8 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#151515;
-          border:1px solid #111111;
+          background:#17233D;
+          border:1px solid #173778;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
@@ -85,28 +85,28 @@ export default function HomeHero() {
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#63C4D9;
+          background:#173778;
           box-shadow:0 8px 26px rgba(17,17,17,0.36);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #151515;
+          outline:2px solid #17233D;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #D5E9EE;
+          border:1px solid #D7E0EF;
           border-radius:8px;
           font-size:12px;
-          color:#151515;
+          color:#17233D;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#151515;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#17233D;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#626B70;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#626B70;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#626B70;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#626B70;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#5F6B80;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#5F6B80;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#5F6B80;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#5F6B80;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#151515;
+          background:#17233D;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#D5E9EE;
+          color:#D7E0EF;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#151515;
+          color:#17233D;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,14 +188,14 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="J.M.K ROOFING"
+          word="Reliance ROOFING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#151515",
-            "--gp-field": "#151515",
+            "--gp-ink": "#17233D",
+            "--gp-field": "#17233D",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>J.M.K Roofing</span>
-                <span data-ch-hero-category>Roofing service<br />Call +61 404 026 017</span>
+                <span data-ch-hero-brand>Reliance Roof Restoration</span>
+                <span data-ch-hero-category>Roofing service<br />Call +61 449 615 054</span>
               </div>
-              <p data-ch-hero-intro>Roofing services made easy.</p>
+              <p data-ch-hero-intro>Roof restoration for Greater Western Sydney.</p>
               <p data-ch-hero-support>
-                Professional roofing services for your property. Call to discuss your roof and request a quote.
+                Roof restoration, cleaning, painting, repointing and tile repairs. Call to discuss your project.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,7 +265,7 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Roofing services made easy.
+              Roof restoration for Greater Western Sydney.
             </h2>
 
             <div data-slipstream-features>
@@ -282,10 +282,10 @@ export default function HomeHero() {
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Home maintenance
+                  Roof cleaning and repairs
                 </h3>
                 <p>
-                  Roof repairs and roof maintenance for your property.
+                  Roof cleaning, repointing and tile repairs for your property.
                 </p>
               </div>
 
@@ -295,24 +295,24 @@ export default function HomeHero() {
                   Talk through your property
                 </h3>
                 <p>
-                  Call J.M.K Roofing to discuss your project and next steps.
+                  Call Reliance Roof Restoration to discuss your project and next steps.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="tel:+61404026017"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#91D8E8] px-7 font-body text-sm font-semibold text-[#151515] shadow-[0_6px_20px_rgba(17,17,17,0.28)] transition-all hover:bg-[#63C4D9] hover:shadow-[0_8px_26px_rgba(17,17,17,0.36)]"
+                href="tel:+61449615054"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#234A9B] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(17,17,17,0.28)] transition-all hover:bg-[#173778] hover:shadow-[0_8px_26px_rgba(17,17,17,0.36)]"
               >
                 Call now
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="tel:+61404026017"
+                href="tel:+61449615054"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#63C4D9]" />
+                <Phone size={15} className="text-[#FFB51B]" />
                 Contact us
               </a>
               <a
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#151515",
+            color: "#17233D",
             fontSize: 14,
             fontWeight: 500,
           }}
