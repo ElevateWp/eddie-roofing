@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-mist/20">
           <div className="lg:col-span-6">
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#050505] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
+              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#111111] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/images/tts-roofing-logo.png"
-                  alt="TTS Roofing logo"
+                  src="/images/jmk-roofing-logo.png"
+                  alt="J.M.K Roofing logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  TTS Roofing
+                  J.M.K Roofing
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Roofing · McGraths Hill
+                  Roofing services
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Roof repairs and roofing services in McGraths Hill. Call to discuss your property.
+              Roof repairs and roofing services for your property. Call to discuss your project.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">+61 414 230 719</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">TTS Roofing</a>}
+              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">+61 404 026 017</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">J.M.K Roofing</a>}
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 Roof repairs and roofing services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need roof repairs? Call TTS Roofing to discuss the work required.
+                Need roof repairs? Call J.M.K Roofing to discuss the work required.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -90,12 +90,12 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              TTS Roofing
+              J.M.K Roofing
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/about/" className="text-paper/80 hover:text-lime transition-colors">
-                  TTS Roofing
+                  J.M.K Roofing
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -170,7 +170,7 @@ export default function Footer() {
               <div>
                 <span className="text-paper/50 block text-13">Address:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
-                  Winnifred Rd, McGraths Hill NSW 2756, Australia
+                  Call to confirm service coverage.
                 </address>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">TTS Roofing</a>
+            <a href="/" className="hover:text-paper">J.M.K Roofing</a>
           </div>
         </div>
       </div>

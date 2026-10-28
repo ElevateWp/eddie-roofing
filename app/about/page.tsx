@@ -14,17 +14,17 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About TTS Roofing',
+  title: 'About J.M.K Roofing',
   description:
-    'Learn about TTS Roofing and discuss your project.',
+    'Learn about J.M.K Roofing and discuss your project.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'TTS Roofing',
+    year: 'J.M.K Roofing',
     title: 'Roofing service',
-    description: 'TTS Roofing Pty Ltd is a roofing contractor. Contact us to discuss your roof repairs and other roofing work.',
+    description: 'J.M.K Roofing is a roofing contractor. Contact us to discuss your roof repairs and other roofing work.',
   },
 ];
 
@@ -59,11 +59,11 @@ export default function AboutPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About TTS Roofing
+                  About J.M.K Roofing
                 </span>
-                <WordRevealH1 text="Roof repairs and roofing services in McGraths Hill." />
+                <WordRevealH1 text="Roof repairs and roofing services." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="TTS Roofing provides roof repairs and roofing services in McGraths Hill, New South Wales. Call to discuss your property and arrange a suitable time." />
+                  <ScrubbedParagraph text="J.M.K Roofing provides roof repairs, re-roofs, maintenance, gutter cleaning, leak detection and leaf guard installation. Call to discuss your property and request a quote." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Call</span>
-                    <span className="font-medium text-forest">+61 414 230 719</span>
+                    <span className="font-medium text-forest">+61 404 026 017</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 About the business
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Roofing for McGraths Hill properties
+                Roofing for your property
               </h2>
             </div>
           </AnimateOnScroll>
@@ -106,7 +106,7 @@ export default function AboutPage() {
               >
                 {/* Year Marker */}
                 <div className="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 rounded-full bg-forest border-2 border-lime flex items-center justify-center" />
-                <span className="font-display text-21 text-[#657080] block mb-1">
+                <span className="font-display text-21 text-[#626B70] block mb-1">
                   {item.year}
                 </span>
                 <h3 className="font-display text-21 md:text-26 text-paper mb-2">
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: TTS Roofing */}
+      {/* SECTION 4: J.M.K Roofing */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                   Our team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  TTS Roofing
+                  J.M.K Roofing
                 </h2>
               </div>
               <Link
@@ -204,7 +204,7 @@ export default function AboutPage() {
                   Roofing work for your property
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Contact TTS Roofing to discuss your roof, the work required and the next steps.
+                  Contact J.M.K Roofing to discuss your roof, the work required and the next steps.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">

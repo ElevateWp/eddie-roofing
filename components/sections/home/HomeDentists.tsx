@@ -30,15 +30,15 @@ export default function HomeDentists() {
               Roofing service
             </span>
             <h2 className="mt-3 max-w-3xl font-display text-26 text-balance text-forest-ink md:text-41">
-              TTS Roofing
+              J.M.K Roofing
             </h2>
             <div className="mt-auto flex flex-col items-center pb-1">
               <p className="max-w-lg text-balance font-body text-15 leading-relaxed text-forest-ink/70">
-                TTS Roofing Pty Ltd is a roofing contractor. Dan is known by customers for his roofing knowledge, helpful service and reliability.
+                Jordan and the J.M.K Roofing team are known by customers for reliable service, tidy workmanship and clear communication.
               </p>
               <Link
                 href="/team/"
-                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#009FD8] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#151923]/20 transition-transform hover:-translate-y-0.5"
+                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#91D8E8] px-7 py-3 font-body text-15 font-semibold text-[#151515] shadow-lg shadow-[#151515]/20 transition-transform hover:-translate-y-0.5"
               >
                 Discuss your roofing <span className="ml-2" aria-hidden="true">→</span>
               </Link>

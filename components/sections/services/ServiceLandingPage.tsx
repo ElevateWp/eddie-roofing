@@ -28,7 +28,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">
-                  TTS Roofing
+                  J.M.K Roofing
                 </span>
                 <WordRevealH1 text={service.name} />
                 <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">
@@ -58,19 +58,19 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist bg-paper-secondary py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Your project</span>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Your roofing project</span>
             <h2 className="font-display text-33 text-forest-ink md:text-41">Planning {service.name.toLowerCase()} for your property</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-ink/80 md:text-17">{service.clinicalExplanation}</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="border border-mist bg-paper p-6 md:p-8">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">Roofing work to discuss</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">What the job may involve</h3>
               <ul className="space-y-3 font-body text-15 text-forest-ink/80">
                 {service.whoNeeds.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-greenAccent" />{item}</li>)}
               </ul>
             </div>
             <div className="border border-mist bg-paper p-6 md:p-8">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">How we work</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">How the team works</h3>
               <ul className="space-y-3 font-body text-15 text-forest-ink/80">
                 {service.benefits.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-orangeAccent" />{item}</li>)}
               </ul>
@@ -103,7 +103,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">When to get in touch</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Roofing work to discuss</h2>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">What the job may involve</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">
               Tell us what you have noticed or what you are planning. We can talk through the property and help clarify suitable next steps for {service.name.toLowerCase()}.
             </p>
@@ -126,7 +126,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
         <div className="mx-auto grid max-w-site grid-cols-1 gap-10 px-6 md:px-12 lg:grid-cols-12 lg:gap-16">
           <AnimateOnScroll animation="fade-right" className="lg:col-span-5">
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Quote and project scope</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Agree the details before work begins</h2>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Agree the project details</h2>
             <p className="mt-4 font-body text-15 leading-relaxed text-forest-light md:text-17">{service.costTransparency.note}</p>
             <p className="mt-5 border-l-2 border-brand pl-4 font-body text-15 font-medium text-forest-ink">{service.costTransparency.baseRange}</p>
           </AnimateOnScroll>
@@ -150,8 +150,8 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">What to expect</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Before, during and after the work</h2>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Project steps</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Before, during and after the job</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">Every property and job is different. Contact us to discuss the details of your project.</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -217,7 +217,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
-            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">TTS Roofing</span>
+            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">J.M.K Roofing</span>
             <h2 className="font-display text-26 md:text-33">Tell us what you need done.</h2>
           </div>
           <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>

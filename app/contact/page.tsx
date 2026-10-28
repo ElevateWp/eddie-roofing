@@ -9,9 +9,9 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact and service area',
+  title: 'Contact J.M.K Roofing',
   description:
-    'Call TTS Roofing on +61 414 230 719 to discuss your roofing.',
+    'Call J.M.K Roofing on +61 404 026 017 to discuss your roofing.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact TTS Roofing." />
+                <WordRevealH1 text="Contact J.M.K Roofing." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call us to discuss your roofing.
+                  Call J.M.K Roofing to discuss roofing work, service coverage and availability.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
               <AnimateOnScroll animation="fade-up" duration={0.8} delay={0.2}>
                 <div>
                   <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                    Address and availability
+                    Service area and availability
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-3">
                     {CLINIC_INFO.name}
@@ -139,13 +139,13 @@ export default function ContactPage() {
                 <div className="p-8 bg-forest text-paper flex flex-col justify-between aspect-[16/10] shadow-sm">
                   <div>
                     <span className="font-body text-13 text-lime block mb-2 font-medium uppercase tracking-wider">
-                      Address and availability
+                      Service area and availability
                     </span>
                     <h3 className="font-display text-26 text-paper mb-2">
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    Winnifred Rd, McGraths Hill NSW 2756, Australia
+                    Call to confirm service coverage for your property.
                     </p>
                   </div>
 

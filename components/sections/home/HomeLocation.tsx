@@ -13,7 +13,7 @@ export default function HomeLocation() {
         <AnimateOnScroll animation="fade-up" duration={0.8}>
           <div className="mb-16">
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-              Contact and opening hours
+              Contact and availability
             </span>
             <h2 className="font-display text-33 md:text-41 text-forest-ink">
               Get in touch
@@ -22,7 +22,7 @@ export default function HomeLocation() {
         </AnimateOnScroll>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Columns 1–6: Address, Contact and opening hours Table */}
+          {/* Columns 1–6: Address, Contact and availability Table */}
           <div className="lg:col-span-6 flex flex-col space-y-8">
             <AnimateOnScroll animation="fade-right" duration={0.85}>
               <div>
@@ -33,7 +33,7 @@ export default function HomeLocation() {
                   Roofing service
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
-                  Get in touch to discuss your project and confirm availability.
+                  Call to discuss your project, service coverage and current availability.
                 </p>
                 {CLINIC_INFO.primaryLocation.landmarks && (
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F3F6FA] border border-[#DCE4EC] px-3 py-1.5 text-12 text-[#151923]">
+                    <span key={highlight} className="bg-[#F3F8FA] border border-[#D5E9EE] px-3 py-1.5 text-12 text-[#151515]">
                       {highlight}
                     </span>
                   ))}
@@ -50,11 +50,11 @@ export default function HomeLocation() {
               </div>
             </AnimateOnScroll>
 
-            {/* Opening hours table with Today highlighted with --lime */}
+            {/* Availability information */}
             <AnimateOnScroll animation="fade-up" duration={0.85} delay={0.15}>
               <div>
                 <span className="font-body text-13 text-forest-ink/60 uppercase tracking-wider block mb-3 font-semibold">
-                  Opening hours
+                  Current availability
                 </span>
                 <div className="border border-mist overflow-hidden bg-paper shadow-sm p-4 font-body text-13 text-forest-ink/80">
                   {CLINIC_INFO.schedule.length > 0
@@ -94,7 +94,7 @@ export default function HomeLocation() {
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  TTS Roofing
+                  J.M.K Roofing
                 </div>
               </div>
             </AnimateOnScroll>
@@ -106,7 +106,7 @@ export default function HomeLocation() {
                     Roofing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Roofing in McGraths Hill
+                    Roofing services for your property
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
                     Call to discuss the property service you need.

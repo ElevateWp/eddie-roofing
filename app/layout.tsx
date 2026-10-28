@@ -11,19 +11,19 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'TTS Roofing | Roofing in McGraths Hill',
+    default: 'J.M.K Roofing | Roofing made easy',
     template: '%s',
   },
   description:
-    'TTS Roofing Pty Ltd is a roofing contractor in McGraths Hill, NSW. Call +61 414 230 719 about roof repairs and request a quote.',
+    'J.M.K Roofing is a roofing contractor offering roof repairs, maintenance, gutter cleaning and more. Call +61 404 026 017 to request a quote.',
   keywords: [
-    'TTS Roofing',
-    'roofing McGraths Hill',
-    'roof maintenance McGraths Hill',
-    'roof repairs McGraths Hill',
-    'TTS Roofing Pty Ltd',
+    'J.M.K Roofing',
+    'J.M.K Roofing',
+    'roof maintenance',
+    'roof repairs',
+    'J.M.K Roofing',
   ],
-  authors: [{ name: 'TTS Roofing' }],
+  authors: [{ name: 'J.M.K Roofing' }],
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
@@ -50,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F6FA] selection:text-[#151923]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F8FA] selection:text-[#151515]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#DCE4EC] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#D5E9EE] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,39 +74,39 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#151923;
-          border:1px solid #050505;
+          background:#151515;
+          border:1px solid #111111;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
           font-weight:600;
           letter-spacing:0.01em;
-          box-shadow:0 6px 20px rgba(5,5,5,0.28);
+          box-shadow:0 6px 20px rgba(17,17,17,0.28);
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#00BFFF;
-          box-shadow:0 8px 26px rgba(5,5,5,0.36);
+          background:#63C4D9;
+          box-shadow:0 8px 26px rgba(17,17,17,0.36);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #151923;
+          outline:2px solid #151515;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #DCE4EC;
+          border:1px solid #D5E9EE;
           border-radius:8px;
           font-size:12px;
-          color:#151923;
+          color:#151515;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#151923;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#151515;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#657080;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#657080;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#657080;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#657080;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#626B70;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#626B70;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#626B70;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#626B70;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#151923;
+          background:#151515;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -153,7 +153,7 @@ export default function HomeHero() {
           gap:1.75rem;
         }
         [data-slipstream-feature]{
-          border-top:1px solid rgba(220,228,237,0.22);
+          border-top:1px solid rgba(213,233,238,0.22);
           padding-top:1.1rem;
         }
         [data-slipstream-feature] h3{
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#DCE4EC;
+          color:#D5E9EE;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#151923;
+          color:#151515;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,14 +188,14 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="TTS ROOFING"
+          word="J.M.K ROOFING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#151923",
-            "--gp-field": "#151923",
+            "--gp-ink": "#151515",
+            "--gp-field": "#151515",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
@@ -244,7 +244,7 @@ export default function HomeHero() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at 18% 12%, rgba(0,0,0,0.16), transparent 38%), radial-gradient(circle at 82% 22%, rgba(0,0,0,0.12), transparent 32%), linear-gradient(135deg, rgba(5,5,5,0.94) 0%, rgba(5,5,5,0.9) 50%, rgba(5,5,5,0.96) 100%)",
+                    "radial-gradient(circle at 18% 12%, rgba(0,0,0,0.16), transparent 38%), radial-gradient(circle at 82% 22%, rgba(0,0,0,0.12), transparent 32%), linear-gradient(135deg, rgba(17,17,17,0.94) 0%, rgba(17,17,17,0.9) 50%, rgba(17,17,17,0.96) 100%)",
                 }}
               />
             </div>
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>TTS Roofing</span>
-                <span data-ch-hero-category>Roofing service<br />Call +61 414 230 719</span>
+                <span data-ch-hero-brand>J.M.K Roofing</span>
+                <span data-ch-hero-category>Roofing service<br />Call +61 404 026 017</span>
               </div>
-              <p data-ch-hero-intro>Roofing in McGraths Hill.</p>
+              <p data-ch-hero-intro>Roofing services made easy.</p>
               <p data-ch-hero-support>
-                Roof repairs and roofing services in McGraths Hill. Call to discuss your roof and request a quote.
+                Professional roofing services for your property. Call to discuss your roof and request a quote.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,7 +265,7 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Roofing in McGraths Hill.
+              Roofing services made easy.
             </h2>
 
             <div data-slipstream-features>
@@ -285,7 +285,7 @@ export default function HomeHero() {
                   Home maintenance
                 </h3>
                 <p>
-                  Roof repairs and roofing services for McGraths Hill properties.
+                  Roof repairs and roof maintenance for your property.
                 </p>
               </div>
 
@@ -295,24 +295,24 @@ export default function HomeHero() {
                   Talk through your property
                 </h3>
                 <p>
-                  Call TTS Roofing to discuss the project and next steps.
+                  Call J.M.K Roofing to discuss your project and next steps.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="tel:+61497298855"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#009FD8] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(5,5,5,0.28)] transition-all hover:bg-[#00BFFF] hover:shadow-[0_8px_26px_rgba(5,5,5,0.36)]"
+                href="tel:+61404026017"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#91D8E8] px-7 font-body text-sm font-semibold text-[#151515] shadow-[0_6px_20px_rgba(17,17,17,0.28)] transition-all hover:bg-[#63C4D9] hover:shadow-[0_8px_26px_rgba(17,17,17,0.36)]"
               >
                 Call now
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="tel:+61497298855"
+                href="tel:+61404026017"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#00BFFF]" />
+                <Phone size={15} className="text-[#63C4D9]" />
                 Contact us
               </a>
               <a
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#151923",
+            color: "#151515",
             fontSize: 14,
             fontWeight: 500,
           }}

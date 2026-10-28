@@ -12,13 +12,13 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'Where is TTS Roofing located?',
-    answer: 'TTS Roofing is based at Winnifred Rd, McGraths Hill NSW 2756. Call to discuss your project.',
+    question: 'What areas does J.M.K Roofing service?',
+    answer: 'Call J.M.K Roofing to confirm service coverage and discuss your project.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
     question: 'How do I arrange a roof repair?',
-    answer: 'Call +61 414 230 719 to discuss what you have noticed and the roof repair required.',
+    answer: 'Call +61 404 026 017 to discuss what you have noticed and the roof repair required.',
     relatedLink: { href: '/roof-repairs/', label: 'Explore our services →' },
   },
   {

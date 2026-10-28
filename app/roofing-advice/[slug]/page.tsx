@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'TTS Roofing',
+      name: author?.name || 'J.M.K Roofing',
     },
     publisher: {
       '@type': 'Organization',

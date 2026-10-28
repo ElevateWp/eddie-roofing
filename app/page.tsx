@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roofing in McGraths Hill',
+  title: 'J.M.K Roofing',
   description:
-    'TTS Roofing is based in McGraths Hill, New South Wales. Call +61 414 230 719 to discuss roof repairs and roofing services.',
+    'J.M.K Roofing provides roof repairs and other roofing services. Call +61 404 026 017 to discuss your project and request a quote.',
   pathname: '/',
 });
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose TTS Roofing */}
+      {/* SECTION 4: Why choose J.M.K Roofing */}
       <HomeWhyUs />
 
       {/* SECTION 5: About the business */}

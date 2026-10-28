@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Roofing advice',
   description:
-    'Roofing advice information from TTS Roofing.',
+    'Roofing advice information from J.M.K Roofing.',
   pathname: '/roofing-advice/',
 });
 
@@ -31,7 +31,7 @@ export default function BlogIndexPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Roofing advice
                 </span>
-                <WordRevealH1 text="Roofing advice for McGraths Hill homes." />
+                <WordRevealH1 text="Practical roofing advice for your home." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
                   Read practical information about roof repairs and roof maintenance.
                 </p>

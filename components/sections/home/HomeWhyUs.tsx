@@ -18,7 +18,7 @@ const REASONS = [
   },
   {
     title: 'Roofing for your property',
-    description: 'TTS Roofing is based in McGraths Hill. Call to discuss your project and the work required.',
+    description: 'J.M.K Roofing offers professional roofing services. Call to discuss your project and the work required.',
   },
 ];
 
@@ -72,7 +72,7 @@ export default function HomeWhyUs() {
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#009FD8]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                  <div className="absolute bottom-3 left-3 bg-[#91D8E8]/90 backdrop-blur-sm text-[#151515] font-body text-12 px-3 py-1 font-medium">
                     Roofing
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default function HomeWhyUs() {
                   />
                 </div>
                 {/* Roofing project detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3F6FA] overflow-hidden border border-mist shadow-sm">
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3F8FA] overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/roofb3-1.jpg"
                     alt="Roofing"
@@ -95,7 +95,7 @@ export default function HomeWhyUs() {
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#009FD8]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#91D8E8]/80 text-[#151515] font-body text-12 px-3 py-2 text-center">
                      Roofing
                   </div>
                 </div>
