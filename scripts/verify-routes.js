@@ -1,9 +1,9 @@
 const http = require('http');
 const routes = [
-  '/', '/about/', '/reviews/', '/team/', '/team/esperance-gutter-cleaning/',
-  '/gutter-cleaning/', '/downpipe-cleaning/', '/home-maintenance/',
-  '/services/', '/quote/', '/contact/', '/gutter-care/',
-  '/gutter-care/why-gutter-cleaning-matters/', '/robots.txt', '/sitemap.xml',
+  '/', '/about/', '/reviews/', '/team/', '/team/tts-roofing/',
+  '/roof-repairs/', '/roof-maintenance/', '/roofing-services/',
+  '/services/', '/quote/', '/contact/', '/roofing-advice/',
+  '/roofing-advice/signs-your-roof-needs-repair/', '/robots.txt', '/sitemap.xml',
 ];
 async function checkRoute(path) {
   return new Promise((resolve) => {

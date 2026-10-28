@@ -27,7 +27,7 @@ export default function BookingForm() {
     fullName: '',
     phone: '',
     email: '',
-    service: 'gutter-cleaning',
+    service: 'roof-repairs',
     preferredDate: '',
     preferredTime: 'Morning',
     notes: '',
@@ -36,6 +36,20 @@ export default function BookingForm() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const whatsappMessage = encodeURIComponent(
+    [
+      'Roofing quote enquiry for TTS Roofing Pty Ltd',
+      `Name: ${formData.fullName}`,
+      `Phone: ${formData.phone}`,
+      `Email: ${formData.email}`,
+      `Service: ${SERVICES.find((service) => service.slug === formData.service)?.name || formData.service}`,
+      `Preferred date: ${formData.preferredDate}`,
+      `Preferred time: ${formData.preferredTime}`,
+      formData.notes ? `Project details: ${formData.notes}` : '',
+    ].filter(Boolean).join('\n'),
+  );
+  const whatsappHref = `https://wa.me/61414230719?text=${whatsappMessage}`;
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -61,29 +75,26 @@ export default function BookingForm() {
     if (!validate()) return;
 
     setIsSubmitting(true);
-    // Simulate brief technical triage intake
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 600);
+    setIsSubmitted(true);
+    setIsSubmitting(false);
   };
 
   if (isSubmitted) {
     return (
       <div className="p-8 md:p-12 bg-forest text-paper transition-all duration-500 ease-nova-ease">
         <span className="font-body text-13 text-lime block mb-2 font-medium uppercase tracking-wider">
-          Enquiry received
+          Enquiry ready
         </span>
       <h3 className="font-display text-33 md:text-41 text-paper mb-4">
-          Quote request received
+          Continue your enquiry in WhatsApp
         </h3>
         <p className="font-body text-17 text-paper/90 leading-relaxed mb-6">
-          Thanks, {formData.fullName}. We received your enquiry and will contact you on <strong className="text-lime">{formData.phone}</strong> to discuss your job.
+          Thanks, {formData.fullName}. Your details are ready to send to TTS Roofing. Use the button below to open WhatsApp and send your quote request.
         </p>
 
         <div className="p-6 bg-paper/10 border border-mist/20 mb-8 space-y-2 font-body text-15">
           <div className="flex justify-between">
-            <span className="text-paper/60">Gutter cleaning service:</span>
+            <span className="text-paper/60">Roofing service:</span>
             <span className="text-paper font-medium">
               {SERVICES.find((s) => s.slug === formData.service)?.name || formData.service}
             </span>
@@ -99,24 +110,18 @@ export default function BookingForm() {
         </div>
 
         <div className="flex flex-wrap items-center gap-4">
+          <Button href={whatsappHref} variant="lime">
+            Send enquiry in WhatsApp
+          </Button>
           <Button
             type="button"
-            variant="ghost"
+            variant="ghost-light"
             onClick={() => {
               setIsSubmitted(false);
-              setFormData({
-                fullName: '',
-                phone: '',
-                email: '',
-                service: 'gutter-cleaning',
-                preferredDate: '',
-                preferredTime: 'Morning',
-                notes: '',
-              });
+              setFormData({ fullName: '', phone: '', email: '', service: 'roof-repairs', preferredDate: '', preferredTime: 'Morning', notes: '' });
             }}
-            className="text-paper border-paper/30 hover:border-paper hover:bg-paper/10"
           >
-            Send another enquiry
+            Edit enquiry
           </Button>
           <a
             href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
@@ -140,7 +145,7 @@ export default function BookingForm() {
           Request a quote
         </h3>
         <p className="font-body text-15 text-forest-ink/70">
-          Tell us what gutter cleaning work you need. We will contact you to discuss the project and next steps.
+          Tell us what roofing work you need. We will contact you to discuss the project and next steps.
         </p>
       </div>
 
@@ -162,7 +167,7 @@ export default function BookingForm() {
           required
         />
         {errors.fullName && (
-          <span className="font-body text-13 text-[#666666] transition-all duration-200">
+          <span className="font-body text-13 text-[#657080] transition-all duration-200">
             {errors.fullName}
           </span>
         )}
@@ -182,12 +187,12 @@ export default function BookingForm() {
               setFormData({ ...formData, phone: e.target.value });
               if (errors.phone) setErrors({ ...errors, phone: undefined });
             }}
-            placeholder="+61 497 298 855"
+            placeholder="+61 414 230 719"
             className="w-full px-4 py-3 text-15 focus:border-forest transition-colors"
             required
           />
           {errors.phone && (
-            <span className="font-body text-13 text-[#666666]">{errors.phone}</span>
+            <span className="font-body text-13 text-[#657080]">{errors.phone}</span>
           )}
         </div>
 
@@ -208,7 +213,7 @@ export default function BookingForm() {
             required
           />
           {errors.email && (
-            <span className="font-body text-13 text-[#666666]">{errors.email}</span>
+            <span className="font-body text-13 text-[#657080]">{errors.email}</span>
           )}
         </div>
       </div>
@@ -216,7 +221,7 @@ export default function BookingForm() {
       {/* Service Selection */}
       <div className="flex flex-col space-y-1.5">
         <label htmlFor="service" className="font-body text-13 text-forest-ink/70">
-          Gutter cleaning service <span className="text-forest">*</span>
+          Roofing service <span className="text-forest">*</span>
         </label>
         <select
           id="service"
@@ -229,7 +234,7 @@ export default function BookingForm() {
               {s.name}
             </option>
           ))}
-          <option value="general-consultation">Other gutter cleaning work</option>
+          <option value="general-consultation">Other roofing work</option>
         </select>
       </div>
 
@@ -252,7 +257,7 @@ export default function BookingForm() {
             required
           />
           {errors.preferredDate && (
-            <span className="font-body text-13 text-[#666666]">{errors.preferredDate}</span>
+            <span className="font-body text-13 text-[#657080]">{errors.preferredDate}</span>
           )}
         </div>
 
@@ -276,14 +281,14 @@ export default function BookingForm() {
       {/* Additional project notes */}
       <div className="flex flex-col space-y-1.5">
         <label htmlFor="notes" className="font-body text-13 text-forest-ink/70">
-          Tell us about the gutter cleaning work (optional)
+          Tell us about the roofing work (optional)
         </label>
         <textarea
           id="notes"
           rows={3}
           value={formData.notes}
           onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-          placeholder="Describe the gutter cleaning work or project you would like to discuss..."
+          placeholder="Describe the roofing work or project you would like to discuss..."
           className="w-full px-4 py-3 text-15 focus:border-forest transition-colors resize-none"
         />
       </div>

@@ -28,7 +28,7 @@ interface PinnedHorizontalTrackProps {
 
 export default function PinnedHorizontalTrack({
   items,
-  title = 'Gutter cleaning services',
+  title = 'Roofing services',
   className = '',
 }: PinnedHorizontalTrackProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -107,7 +107,7 @@ export default function PinnedHorizontalTrack({
         <div>
           <span className="font-body text-13 text-forest-ink/60 block mb-2">{title}</span>
           <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink leading-tight">
-            Gutter cleaning services
+            Roofing services
           </h2>
         </div>
         <div className="flex items-center gap-4">
@@ -233,7 +233,7 @@ export default function PinnedHorizontalTrack({
               setCurrentIndex(idx + 1);
             }}
             className={`h-3 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest ${
-              idx === currentIndex - 1 ? 'bg-[#111111] w-4' : 'bg-[#E2E2E2] w-3'
+              idx === currentIndex - 1 ? 'bg-[#009FD8] w-4' : 'bg-[#DCE4EC] w-3'
             }`}
           />
         ))}

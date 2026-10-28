@@ -8,18 +8,18 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What services are available?',
-    answer: 'Ask about gutter cleaning, downpipe cleaning and home maintenance. Call to discuss your property.',
+    answer: 'Ask about roof repairs and other roofing services. Call to discuss your roof and the work required.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'Where is Esperance Gutter Cleaning located?',
-    answer: 'Esperance Gutter Cleaning is based at 1 Andrew St, Esperance WA 6450. Call to discuss your project.',
+    question: 'Where is TTS Roofing located?',
+    answer: 'TTS Roofing is based at Winnifred Rd, McGraths Hill NSW 2756. Call to discuss your project.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
-    question: 'How do I arrange gutter cleaning?',
-    answer: 'Call +61 497 298 855 to discuss what you have noticed and the gutter cleaning required.',
-    relatedLink: { href: '/gutter-cleaning/', label: 'Explore our services →' },
+    question: 'How do I arrange a roof repair?',
+    answer: 'Call +61 414 230 719 to discuss what you have noticed and the roof repair required.',
+    relatedLink: { href: '/roof-repairs/', label: 'Explore our services →' },
   },
   {
     question: 'How do I request a quote?',

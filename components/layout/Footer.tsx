@@ -13,8 +13,8 @@ export default function Footer() {
             <div className="flex items-center gap-4 mb-5">
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#050505] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/images/logo.png"
-                  alt="Esperance Gutter Cleaning logo"
+                  src="/images/tts-roofing-logo.png"
+                  alt="TTS Roofing logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,29 +22,29 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Esperance Gutter Cleaning
+                  TTS Roofing
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Gutter cleaning · Esperance
+                  Roofing · McGraths Hill
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Gutter cleaning and home maintenance in Esperance. Call to discuss your property.
+              Roof repairs and roofing services in McGraths Hill. Call to discuss your property.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">+61 497 298 855</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Esperance Gutter Cleaning</a>}
-              {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}<a href="https://www.facebook.com/EsperanceGutterCleaning/" target="_blank" rel="noopener noreferrer" className="hover:text-paper">Facebook</a>
+              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">+61 414 230 719</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">TTS Roofing</a>}
+              {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
 
           <div className="lg:col-span-6 lg:pl-12 flex flex-col justify-between">
             <div className="p-6 bg-paper/5 border border-mist/20 rounded-none shadow-sm">
               <span className="font-body text-13 text-lime block mb-2 font-semibold uppercase tracking-wider">
-                Gutter cleaning and home maintenance
+                Roof repairs and roofing services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need gutter cleaning or home maintenance? Call us.
+                Need roof repairs? Call TTS Roofing to discuss the work required.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -90,12 +90,12 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Esperance Gutter Cleaning
+              TTS Roofing
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/about/" className="text-paper/80 hover:text-lime transition-colors">
-                  Esperance Gutter Cleaning
+                  TTS Roofing
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -124,12 +124,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services/" className="text-paper/80 hover:text-lime transition-colors">
-                  Gutter cleaning and home maintenance
+                  Roof repairs and roofing services
                 </Link>
               </li>
               <li>
-                <Link href="/gutter-care/" className="text-paper/80 hover:text-lime transition-colors">
-                  Gutter care tips
+                <Link href="/roofing-advice/" className="text-paper/80 hover:text-lime transition-colors">
+                  Roofing advice tips
                 </Link>
               </li>
               <li>
@@ -170,7 +170,7 @@ export default function Footer() {
               <div>
                 <span className="text-paper/50 block text-13">Address:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
-                  1 Andrew St, Esperance WA 6450, Australia
+                  Winnifred Rd, McGraths Hill NSW 2756, Australia
                 </address>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Esperance Gutter Cleaning</a>
+            <a href="/" className="hover:text-paper">TTS Roofing</a>
           </div>
         </div>
       </div>

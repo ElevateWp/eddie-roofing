@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E2E2E2] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#DCE4EC] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,7 +74,7 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#111111;
+          background:#151923;
           border:1px solid #050505;
           border-radius:9999px;
           color:#ffffff;
@@ -85,28 +85,28 @@ export default function HomeHero() {
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#333333;
+          background:#00BFFF;
           box-shadow:0 8px 26px rgba(5,5,5,0.36);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #111111;
+          outline:2px solid #151923;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #E2E2E2;
+          border:1px solid #DCE4EC;
           border-radius:8px;
           font-size:12px;
-          color:#111111;
+          color:#151923;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#111111;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#151923;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#666666;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#666666;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#666666;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#666666;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#657080;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#657080;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#657080;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#657080;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#111111;
+          background:#151923;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#E2E2E2;
+          color:#DCE4EC;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#111111;
+          color:#151923;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,20 +188,20 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="ESPERANCE GUTTER CLEANING"
+          word="TTS ROOFING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#111111",
-            "--gp-field": "#111111",
+            "--gp-ink": "#151923",
+            "--gp-field": "#151923",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
           interactive={true}
           annotations={false}
-          enterLabel="Explore gutter cleaning"
+          enterLabel="Explore roofing"
           underlay={
             <div
               className="absolute inset-0 overflow-hidden pointer-events-none"
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>Esperance Gutter Cleaning</span>
-                <span data-ch-hero-category>Gutter cleaning service<br />Call +61 497 298 855</span>
+                <span data-ch-hero-brand>TTS Roofing</span>
+                <span data-ch-hero-category>Roofing service<br />Call +61 414 230 719</span>
               </div>
-              <p data-ch-hero-intro>Gutter cleaning in Esperance.</p>
+              <p data-ch-hero-intro>Roofing in McGraths Hill.</p>
               <p data-ch-hero-support>
-                Local gutter cleaning and home maintenance in Esperance. Call to discuss your property.
+                Roof repairs and roofing services in McGraths Hill. Call to discuss your roof and request a quote.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,17 +265,17 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Gutter cleaning in Esperance.
+              Roofing in McGraths Hill.
             </h2>
 
             <div data-slipstream-features>
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>01</span>
-                  Gutter cleaning
+                  Roofing
                 </h3>
                 <p>
-                  Discuss your gutter cleaning and the work required.
+                  Discuss your roofing and the work required.
                 </p>
               </div>
 
@@ -285,7 +285,7 @@ export default function HomeHero() {
                   Home maintenance
                 </h3>
                 <p>
-                  Gutter cleaning and home maintenance for Esperance properties.
+                  Roof repairs and roofing services for McGraths Hill properties.
                 </p>
               </div>
 
@@ -295,7 +295,7 @@ export default function HomeHero() {
                   Talk through your property
                 </h3>
                 <p>
-                  Call Esperance Gutter Cleaning to discuss the project and next steps.
+                  Call TTS Roofing to discuss the project and next steps.
                 </p>
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function HomeHero() {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
                 href="tel:+61497298855"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#111111] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(5,5,5,0.28)] transition-all hover:bg-[#333333] hover:shadow-[0_8px_26px_rgba(5,5,5,0.36)]"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#009FD8] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(5,5,5,0.28)] transition-all hover:bg-[#00BFFF] hover:shadow-[0_8px_26px_rgba(5,5,5,0.36)]"
               >
                 Call now
                 <ArrowRight size={16} />
@@ -312,14 +312,14 @@ export default function HomeHero() {
                 href="tel:+61497298855"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#333333]" />
+                <Phone size={15} className="text-[#00BFFF]" />
                 Contact us
               </a>
               <a
                 href="/services/"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 font-body text-sm font-medium text-white/90 hover:bg-white/15 hover:text-white transition-all"
               >
-                <span>Explore gutter cleaning services</span>
+                <span>Explore roofing services</span>
                 <ArrowDown size={15} />
               </a>
             </div>
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#111111",
+            color: "#151923",
             fontSize: 14,
             fontWeight: 500,
           }}

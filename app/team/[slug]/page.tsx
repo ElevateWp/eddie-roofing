@@ -67,7 +67,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Esperance Gutter Cleaning team', path: '/team/' },
+              { name: 'TTS Roofing team', path: '/team/' },
               { name: dentist.name, path: `/team/${dentist.slug}/` },
             ]}
           />
@@ -136,7 +136,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
             {dentist.education.length > 0 && <div className="lg:col-span-6">
               <AnimateOnScroll animation="fade-up" duration={0.8}>
                 <h2 className="font-display text-26 md:text-33 text-forest-ink mb-6">
-                  Gutter cleaning services
+                  Roofing services
                 </h2>
                 <ul className="space-y-4 font-body text-15 text-forest-ink/80">
                   {dentist.education.map((edu, idx) => (
@@ -152,7 +152,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
             {dentist.memberships.length > 0 && <div className="lg:col-span-6">
               <AnimateOnScroll animation="fade-up" duration={0.8} delay={0.15}>
                 <h2 className="font-display text-26 md:text-33 text-forest-ink mb-6">
-                  About Esperance Gutter Cleaning
+                  About TTS Roofing
                 </h2>
                 <ul className="space-y-4 font-body text-15 text-forest-ink/80">
                   {dentist.memberships.map((mem, idx) => (

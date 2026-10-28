@@ -11,18 +11,19 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Esperance Gutter Cleaning | Gutter cleaning in Esperance',
+    default: 'TTS Roofing | Roofing in McGraths Hill',
     template: '%s',
   },
   description:
-    'Esperance Gutter Cleaning provides gutter cleaning in Esperance, WA. Call +61 497 298 855 to discuss your property.',
+    'TTS Roofing Pty Ltd is a roofing contractor in McGraths Hill, NSW. Call +61 414 230 719 about roof repairs and request a quote.',
   keywords: [
-    'Esperance Gutter Cleaning',
-    'gutter cleaning Esperance',
-    'downpipe cleaning Esperance',
-    'home maintenance Esperance',
+    'TTS Roofing',
+    'roofing McGraths Hill',
+    'roof maintenance McGraths Hill',
+    'roof repairs McGraths Hill',
+    'TTS Roofing Pty Ltd',
   ],
-  authors: [{ name: 'Esperance Gutter Cleaning' }],
+  authors: [{ name: 'TTS Roofing' }],
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
@@ -49,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F5F5F5] selection:text-[#111111]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F6FA] selection:text-[#151923]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

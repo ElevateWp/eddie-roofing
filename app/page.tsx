@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Gutter cleaning in Esperance',
+  title: 'Roofing in McGraths Hill',
   description:
-    'Esperance Gutter Cleaning is based in Esperance, Western Australia. Call +61 497 298 855 to discuss gutter cleaning and home maintenance.',
+    'TTS Roofing is based in McGraths Hill, New South Wales. Call +61 414 230 719 to discuss roof repairs and roofing services.',
   pathname: '/',
 });
 
@@ -44,10 +44,10 @@ export default function HomePage() {
       {/* SECTION 2A: Customer reviews */}
       <HomeReviews />
 
-      {/* SECTION 3: Gutter cleaning services */}
+      {/* SECTION 3: Roofing services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Gutter cleaning services"
+        title="Roofing services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose Esperance Gutter Cleaning */}
+      {/* SECTION 4: Why choose TTS Roofing */}
       <HomeWhyUs />
 
       {/* SECTION 5: About the business */}
@@ -67,7 +67,7 @@ export default function HomePage() {
       {/* SECTION 7: Before & After (Draggable Slider - Orchestrated Moment 3) */}
       <HomeBeforeAfter />
 
-      {/* SECTION 9: Gutter cleaning services Projects */}
+      {/* SECTION 9: Roofing services Projects */}
       <HomeGallery />
 
       {/* SECTION 10: Frequently asked questions */}

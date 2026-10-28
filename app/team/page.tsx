@@ -9,7 +9,7 @@ import HomeDentists from '@/components/sections/home/HomeDentists';
 
 export const metadata: Metadata = createMetadata({
   title: 'Our team',
-  description: 'Esperance Gutter Cleaning Call +61 497 298 855 to discuss your project.',
+  description: 'TTS Roofing Pty Ltd is a roofing contractor in McGraths Hill, NSW. Call +61 414 230 719 to discuss roof repairs.',
   pathname: '/team/',
 });
 
@@ -20,9 +20,9 @@ export default function TeamPage() {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <Breadcrumbs items={[{ name: 'Our team', path: '/team/' }]} />
           <div className="mt-8 max-w-3xl">
-            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Esperance Gutter Cleaning</span>
-            <WordRevealH1 text="Esperance Gutter Cleaning" />
-            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Esperance Gutter Cleaning is a gutter cleaning service. Call to discuss gutter cleanings.</p>
+            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">TTS Roofing</span>
+            <WordRevealH1 text="TTS Roofing" />
+            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">TTS Roofing Pty Ltd is a roofing contractor in McGraths Hill, NSW. Call to discuss roof repairs and request a quote.</p>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function TeamPage() {
 
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Esperance Gutter Cleaning</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">TTS Roofing</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
           <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest">Request a quote</Link>
         </div>
       </section>

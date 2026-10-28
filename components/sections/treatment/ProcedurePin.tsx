@@ -26,8 +26,8 @@ interface ProcedurePinProps {
 
 export default function ProcedurePin({
   steps,
-  title = 'Gutter cleaning project steps',
-  subtitle = 'Gutter cleaning project steps',
+  title = 'Roofing project steps',
+  subtitle = 'Roofing project steps',
   className = '',
 }: ProcedurePinProps) {
   const containerRef = useRef<HTMLDivElement>(null);
