@@ -12,13 +12,13 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'What areas does Reliance Roof Restoration Greater Western Sydney service?',
-    answer: 'The team serves Greater Western Sydney from Quakers Hill. Call to discuss your property and availability.',
+    question: 'What areas does Eddie’s Roofing service?',
+    answer: 'The team serves Shell Cove and surrounding areas from Shell Cove. Call to discuss your property and availability.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
     question: 'How do I arrange a roof repair?',
-    answer: 'Call +61 449 615 054 to discuss your roof restoration, cleaning, painting, repointing or tile repair.',
+    answer: 'Call +61 431 721 599 to discuss your roof restoration, cleaning, painting, repointing or tile repair.',
     relatedLink: { href: '/roof-restoration/', label: 'Explore our services →' },
   },
   {

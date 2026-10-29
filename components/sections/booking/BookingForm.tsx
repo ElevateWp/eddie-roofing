@@ -37,19 +37,7 @@ export default function BookingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const whatsappMessage = encodeURIComponent(
-    [
-      'Roof restoration quote enquiry for Reliance Roof Restoration Greater Western Sydney',
-      `Name: ${formData.fullName}`,
-      `Phone: ${formData.phone}`,
-      `Email: ${formData.email}`,
-      `Service: ${SERVICES.find((service) => service.slug === formData.service)?.name || formData.service}`,
-      `Preferred date: ${formData.preferredDate}`,
-      `Preferred time: ${formData.preferredTime}`,
-      formData.notes ? `Project details: ${formData.notes}` : '',
-    ].filter(Boolean).join('\n'),
-  );
-  const whatsappHref = `https://wa.me/61414230719?text=${whatsappMessage}`;
+  const callHref = `tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`;
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -86,10 +74,10 @@ export default function BookingForm() {
           Enquiry ready
         </span>
       <h3 className="font-display text-33 md:text-41 text-paper mb-4">
-          Continue your enquiry in WhatsApp
+          Call Eddie to continue your enquiry
         </h3>
         <p className="font-body text-17 text-paper/90 leading-relaxed mb-6">
-          Thanks, {formData.fullName}. Your details are ready to send to Reliance Roof Restoration. Use the button below to open WhatsApp and send your quote request.
+          Thanks, {formData.fullName}. Your enquiry details are ready. Call Eddie to discuss your project and request a quote.
         </p>
 
         <div className="p-6 bg-paper/10 border border-mist/20 mb-8 space-y-2 font-body text-15">
@@ -110,8 +98,8 @@ export default function BookingForm() {
         </div>
 
         <div className="flex flex-wrap items-center gap-4">
-          <Button href={whatsappHref} variant="lime">
-            Send enquiry in WhatsApp
+          <Button href={callHref} variant="lime">
+            Call Eddie
           </Button>
           <Button
             type="button"
@@ -167,7 +155,7 @@ export default function BookingForm() {
           required
         />
         {errors.fullName && (
-          <span className="font-body text-13 text-[#5F6B80] transition-all duration-200">
+          <span className="font-body text-13 text-[#5F6368] transition-all duration-200">
             {errors.fullName}
           </span>
         )}
@@ -187,12 +175,12 @@ export default function BookingForm() {
               setFormData({ ...formData, phone: e.target.value });
               if (errors.phone) setErrors({ ...errors, phone: undefined });
             }}
-            placeholder="+61 449 615 054"
+            placeholder="+61 431 721 599"
             className="w-full px-4 py-3 text-15 focus:border-forest transition-colors"
             required
           />
           {errors.phone && (
-            <span className="font-body text-13 text-[#5F6B80]">{errors.phone}</span>
+            <span className="font-body text-13 text-[#5F6368]">{errors.phone}</span>
           )}
         </div>
 
@@ -213,7 +201,7 @@ export default function BookingForm() {
             required
           />
           {errors.email && (
-            <span className="font-body text-13 text-[#5F6B80]">{errors.email}</span>
+            <span className="font-body text-13 text-[#5F6368]">{errors.email}</span>
           )}
         </div>
       </div>
@@ -257,7 +245,7 @@ export default function BookingForm() {
             required
           />
           {errors.preferredDate && (
-            <span className="font-body text-13 text-[#5F6B80]">{errors.preferredDate}</span>
+            <span className="font-body text-13 text-[#5F6368]">{errors.preferredDate}</span>
           )}
         </div>
 

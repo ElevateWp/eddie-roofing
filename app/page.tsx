@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Reliance Roof Restoration Greater Western Sydney',
+  title: 'Eddie’s Roofing',
   description:
-    'Roof restoration, roof cleaning, painting, repointing and tile repairs in Greater Western Sydney. Call +61 449 615 054 to request a quote.',
+    'Roof restoration, roof cleaning, painting, repointing and tile repairs in Shell Cove and surrounding areas. Call +61 431 721 599 to request a quote.',
   pathname: '/',
 });
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose Reliance Roof Restoration Greater Western Sydney Greater Western Sydney Greater Western Sydney */}
+      {/* SECTION 4: Why choose Eddie’s Roofing Shell Cove and surrounding areas Shell Cove and surrounding areas */}
       <HomeWhyUs />
 
       {/* SECTION 5: About the business */}

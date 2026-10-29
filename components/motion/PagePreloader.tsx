@@ -148,9 +148,9 @@ export default function PagePreloader() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#234A9B] text-[#17233D] overflow-hidden select-none"
+      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#C8CDD1] text-[#151515] overflow-hidden select-none"
       style={{ willChange: 'clip-path, opacity' }}
-      aria-label="Loading Reliance Roof Restoration"
+      aria-label="Loading Eddie’s Roofing"
     >
       {/* One charcoal cover retracts along a stepped diagonal, keeping the reveal continuous. */}
 
@@ -161,11 +161,11 @@ export default function PagePreloader() {
         {/* Animated 3D Logo */}
         <div
           ref={logoRef}
-          className="relative w-40 h-20 sm:w-48 sm:h-24 bg-[#173778] rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#173778]/40"
+          className="relative w-40 h-20 sm:w-48 sm:h-24 bg-[#050505] rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#050505]/40"
         >
           <Image
-            src="/images/reliance-roof-restoration-logo.png"
-            alt="Reliance Roof Restoration"
+            src="/images/eddies-roofing-logo.png"
+            alt="Eddie’s Roofing"
             width={220}
             height={118}
             priority
@@ -176,9 +176,9 @@ export default function PagePreloader() {
         {/* Primary Requested Uppercase Welcome Text */}
         <h1
           ref={titleRef}
-          className="font-display text-22 sm:text-30 md:text-36 font-medium text-[#17233D] uppercase tracking-[0.08em] leading-tight mb-3 text-shadow-sm"
+          className="font-display text-22 sm:text-30 md:text-36 font-medium text-[#151515] uppercase tracking-[0.08em] leading-tight mb-3 text-shadow-sm"
         >
-          Reliance Roof Restoration
+          Eddie’s Roofing
         </h1>
 
         {/* Delicate Golden-Lime Divider Line */}
@@ -190,7 +190,7 @@ export default function PagePreloader() {
         {/* Subtitle / business name */}
         <p
           ref={subtitleRef}
-          className="font-body text-12 sm:text-13 text-[#17233D]/85 uppercase tracking-[0.15em]"
+          className="font-body text-12 sm:text-13 text-[#151515]/85 uppercase tracking-[0.15em]"
         >
            professional roofing services 
         </p>

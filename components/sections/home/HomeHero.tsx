@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#D7E0EF] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#D9DDE0] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,8 +74,8 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#17233D;
-          border:1px solid #173778;
+          background:#151515;
+          border:1px solid #050505;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
@@ -85,28 +85,28 @@ export default function HomeHero() {
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#173778;
+          background:#050505;
           box-shadow:0 8px 26px rgba(17,17,17,0.36);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #17233D;
+          outline:2px solid #151515;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #D7E0EF;
+          border:1px solid #D9DDE0;
           border-radius:8px;
           font-size:12px;
-          color:#17233D;
+          color:#151515;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#17233D;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#151515;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#5F6B80;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#5F6B80;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#5F6B80;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#5F6B80;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#5F6368;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#5F6368;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#5F6368;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#5F6368;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#17233D;
+          background:#151515;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#D7E0EF;
+          color:#D9DDE0;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#17233D;
+          color:#151515;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,14 +188,14 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="Reliance ROOFING"
+          word="EDDIE'S ROOFING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#17233D",
-            "--gp-field": "#17233D",
+            "--gp-ink": "#151515",
+            "--gp-field": "#151515",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>Reliance Roof Restoration</span>
-                <span data-ch-hero-category>Roofing service<br />Call +61 449 615 054</span>
+                <span data-ch-hero-brand>Eddie’s Roofing</span>
+                <span data-ch-hero-category>Shell Cove, NSW<br />Call +61 431 721 599</span>
               </div>
-              <p data-ch-hero-intro>Roof restoration for Greater Western Sydney.</p>
+              <p data-ch-hero-intro>Roofing for Shell Cove and surrounding areas.</p>
               <p data-ch-hero-support>
-                Roof restoration, cleaning, painting, repointing and tile repairs. Call to discuss your project.
+                Whirlybird installation, roof repairs, restoration and maintenance. Call Eddie to discuss your roof.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,7 +265,7 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Roof restoration for Greater Western Sydney.
+              Roofing for Shell Cove and surrounding areas.
             </h2>
 
             <div data-slipstream-features>
@@ -275,7 +275,7 @@ export default function HomeHero() {
                   Roofing
                 </h3>
                 <p>
-                  Discuss your roofing and the work required.
+                  Practical roof repairs and maintenance.
                 </p>
               </div>
 
@@ -285,7 +285,7 @@ export default function HomeHero() {
                   Roof cleaning and repairs
                 </h3>
                 <p>
-                  Roof cleaning, repointing and tile repairs for your property.
+                  Cleaning, repointing and tile repairs for your roof.
                 </p>
               </div>
 
@@ -295,24 +295,24 @@ export default function HomeHero() {
                   Talk through your property
                 </h3>
                 <p>
-                  Call Reliance Roof Restoration to discuss your project and next steps.
+                  Serving Shell Cove, Shellharbour and surrounding areas.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="tel:+61449615054"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#234A9B] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(17,17,17,0.28)] transition-all hover:bg-[#173778] hover:shadow-[0_8px_26px_rgba(17,17,17,0.36)]"
+                href="tel:+61431721599"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#C8CDD1] px-7 font-body text-sm font-semibold text-[#151515] shadow-[0_6px_20px_rgba(17,17,17,0.28)] transition-all hover:bg-[#E5E7E9] hover:shadow-[0_8px_26px_rgba(17,17,17,0.36)]"
               >
                 Call now
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="tel:+61449615054"
+                href="tel:+61431721599"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#FFB51B]" />
+                <Phone size={15} className="text-[#A6ADB3]" />
                 Contact us
               </a>
               <a
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#17233D",
+            color: "#151515",
             fontSize: 14,
             fontWeight: 500,
           }}

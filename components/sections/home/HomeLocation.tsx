@@ -33,7 +33,7 @@ export default function HomeLocation() {
                   Roofing service
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
-                  Based in Quakers Hill, Reliance Roof Restoration serves Greater Western Sydney. Call to discuss your roof and current availability.
+                  Based in Shell Cove, Eddie’s Roofing serves Shell Cove, Shellharbour and surrounding areas. Call to discuss your roof and current availability.
                 </p>
                 {CLINIC_INFO.primaryLocation.landmarks && (
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F3F6FC] border border-[#D7E0EF] px-3 py-1.5 text-12 text-[#17233D]">
+                    <span key={highlight} className="bg-[#F3F4F5] border border-[#D9DDE0] px-3 py-1.5 text-12 text-[#151515]">
                       {highlight}
                     </span>
                   ))}
@@ -94,7 +94,7 @@ export default function HomeLocation() {
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Reliance Roof Restoration
+                  Eddie’s Roofing
                 </div>
               </div>
             </AnimateOnScroll>

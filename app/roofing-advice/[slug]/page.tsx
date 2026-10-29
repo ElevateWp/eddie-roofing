@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Reliance Roof Restoration',
+      name: author?.name || 'Eddie’s Roofing',
     },
     publisher: {
       '@type': 'Organization',

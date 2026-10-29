@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Roofing advice',
   description:
-    'Roofing advice information from Reliance Roof Restoration.',
+    'Roofing advice information from Eddie’s Roofing.',
   pathname: '/roofing-advice/',
 });
 

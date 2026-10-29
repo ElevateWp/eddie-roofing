@@ -9,7 +9,7 @@ import HomeDentists from '@/components/sections/home/HomeDentists';
 
 export const metadata: Metadata = createMetadata({
   title: 'Our team',
-  description: 'Reliance Roof Restoration Greater Western Sydney offers roof restoration, cleaning, painting, repointing and tile repairs. Call +61 449 615 054.',
+  description: 'Eddie’s Roofing offers roof restoration, cleaning, painting, repointing and tile repairs. Call +61 431 721 599.',
   pathname: '/team/',
 });
 
@@ -20,9 +20,9 @@ export default function TeamPage() {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <Breadcrumbs items={[{ name: 'Our team', path: '/team/' }]} />
           <div className="mt-8 max-w-3xl">
-            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Reliance Roof Restoration</span>
-            <WordRevealH1 text="Meet the Reliance roof restoration team." />
-            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Vipin and Kiran are praised by customers for clear communication and professional roof restoration work across Greater Western Sydney. Contact the team to discuss your roof.</p>
+            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Eddie’s Roofing</span>
+            <WordRevealH1 text="Meet Eddie, your local roofing contractor." />
+            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Eddie's Roofing serves Shell Cove, Shellharbour and surrounding areas. Contact Eddie to discuss repairs, restoration or whirlybird installation.</p>
           </div>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function TeamPage() {
 
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Reliance Roof Restoration</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Eddie’s Roofing</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
           <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest">Request a quote</Link>
         </div>
       </section>

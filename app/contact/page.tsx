@@ -9,9 +9,9 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact Reliance Roof Restoration Greater Western Sydney',
+  title: 'Contact Eddie’s Roofing',
   description:
-    'Call Reliance Roof Restoration Greater Western Sydney on +61 449 615 054 to discuss your roof.',
+    'Call Eddie’s Roofing on +61 431 721 599 to discuss your roof.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact Reliance Roof Restoration Greater Western Sydney." />
+                <WordRevealH1 text="Contact Eddie’s Roofing." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call the Reliance Roof Restoration team to discuss roof restoration, cleaning, painting, repointing, tile repairs and availability.
+                  Call the Eddie’s Roofing team to discuss roof restoration, cleaning, painting, repointing, tile repairs and availability.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     {CLINIC_INFO.primaryLocation.directions}
                   </address>
                   <div className="p-4 bg-mist/40 border-l-2 border-forest font-body text-13 text-forest-ink/80 leading-relaxed">
-                    Based in Quakers Hill and serving Greater Western Sydney. Call to discuss availability.
+                    Based in Shell Cove and serving Shell Cove and surrounding areas. Call to discuss availability.
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    Serving Greater Western Sydney from Quakers Hill. Call to discuss your property.
+                    Serving Shell Cove and surrounding areas from Shell Cove. Call to discuss your property.
                     </p>
                   </div>
 

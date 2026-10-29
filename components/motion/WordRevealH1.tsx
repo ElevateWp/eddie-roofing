@@ -48,7 +48,7 @@ export default function WordRevealH1({ text, className = '', delay = 0.5, id }: 
       {wordsArray.map((word, idx) => (
         <span
           key={idx}
-          className="inline-block overflow-hidden align-top pb-[0.08em] mr-[0.28em] last:mr-0"
+          className="inline-block overflow-hidden align-top pb-[0.08em] pr-[0.08em] mr-[0.28em] last:mr-0"
         >
           <span
             ref={(el) => {
